@@ -1,41 +1,34 @@
 <template>
   <v-container class="fill-height">
-    <v-responsive
-      class="align-centerfill-height mx-auto"
-      max-width="900"
-    >
+    <v-responsive class="align-center fill-height mx-auto" max-width="1646" max-height="870">
       <v-row>
         <v-col cols="12">
-          <v-card
-            class="py-5"
-            color="surface-variant"
-            image="https://cdn.vuetifyjs.com/docs/images/one/create/feature.png"
-            prepend-icon="mdi-rocket-launch-outline"
-            rounded="lg"
-            variant="outlined"
-          >
-            <template #image>
-              <v-img position="top right" />
-            </template>
-
-            <template #title>
-              <h2 class="text-h5 font-weight-bold">Get started</h2>
-            </template>
-
-            <template #subtitle>
-              <div class="text-subtitle-1">
-                Replace this page by removing <v-kbd>{{ `<HelloWorld />` }}</v-kbd> in <v-kbd>pages/index.vue</v-kbd>.
-              </div>
-            </template>
-
-            <v-overlay
-              opacity=".12"
-              scrim="primary"
-              contained
-              model-value
-              persistent
-            />
-          </v-card>
+          <v-sheet :elevation="1" height="70vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070">
+            <v-container fluid class="fill-height" style="padding: 0">
+              <v-row class="fill-height align-center" style="padding: 150px">
+                <v-col cols="6" class="squiggly-bg">
+                  <v-img aspect-ratio="16/9" max-width="580px" max-height="303px" cover src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-img>
+                </v-col>
+                <v-col cols="6">
+                  <div>
+                    <p class="title">Bitcoin<br/>Sneakers x OTO</p>
+                    <div style="padding: 30px 0" class="desc">
+                      <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>
+                    </div>
+                    <div class="d-flex">
+                      <div class="text">
+                        <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you’re hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
+                      </div>
+                      <div class="vr align-self-stretch"></div>
+                      <div class="text">
+                        <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
+                      </div>
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-sheet>
         </v-col>
       </v-row>
     </v-responsive>
@@ -45,3 +38,36 @@
 <script setup lang="ts">
   //
 </script>
+
+<style>
+@import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
+@import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
+
+                
+/* .squiggly-bg {
+} */
+.title {
+  font: normal normal bold 50px/45px ITC Avant Garde Gothic W02 Md;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  font-stretch: 1% 150%
+}
+.desc {
+  text-align: left;
+  font: normal normal bold 16px/17px Helvetica Neue;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.text {
+  font: normal normal normal 16px/17px Helvetica Neue;
+  letter-spacing: -0.32px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.vr {
+  margin: 0 30px; 
+  border-right: 2px solid #fff; 
+  opacity: 0.5
+}
+</style>
