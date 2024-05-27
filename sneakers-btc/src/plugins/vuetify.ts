@@ -7,6 +7,7 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import { VApp, VAppBar, VContainer, VMain, VDataTable } from 'vuetify/components'
 
 // Composables
 import { createVuetify } from 'vuetify'
@@ -15,5 +16,12 @@ import { createVuetify } from 'vuetify'
 export default createVuetify({
   theme: {
     defaultTheme: 'dark',
+  } ,
+   components: {
+    VApp,
+    VAppBar,
+    VContainer,
+    VMain,
+    VDataTable
   },
 })
