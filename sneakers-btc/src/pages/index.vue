@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld />
+  <ShoeSizeTable />
 </template>
 
 <script lang="ts" setup>
