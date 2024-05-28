@@ -7,7 +7,7 @@
             <v-container fluid class="fill-height" style="padding: 0">
               <v-row class="fill-height align-center" style="padding: 150px">
                 <v-col cols="6" class="squiggly-bg">
-                  <v-img aspect-ratio="16/9" max-width="580px" max-height="303px" cover src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-img>
+                  <img src="@/assets/images/sneaker.png" />
                 </v-col>
                 <v-col cols="6">
                   <div>
@@ -17,7 +17,7 @@
                     </div>
                     <div class="d-flex">
                       <div class="text">
-                        <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you’re hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
+                        <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
                       </div>
                       <div class="vr align-self-stretch"></div>
                       <div class="text">
@@ -69,5 +69,10 @@
   margin: 0 30px; 
   border-right: 2px solid #fff; 
   opacity: 0.5
+}
+.squiggly-bg {
+  background-image: url('@/assets/images/squiggle.svg');
+  background-position: top;
+  background-size: cover;
 }
 </style>
