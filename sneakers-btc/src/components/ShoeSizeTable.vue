@@ -9,7 +9,8 @@
               :items-per-page="20"
               disable-pagination
               hide-default-footer
-              class="elevation-1"
+              class="elevation-1 custom-table"
+              
             >
               <template v-slot:top></template>
               <template v-slot:footer>
@@ -151,13 +152,14 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  }
+    justify-content: space-between;   
+  } 
   .v-data-table tr {
     font-size: 1rem;       
   }
   .v-data-table td {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    max-height: 30px;
   }
   .v-data-table th {    
     background-color: #333333!important; /* Custom header background color (optional) */
@@ -172,6 +174,10 @@
   .v-data-table-footer {
   display: none!important; /* Hides the footer with pagination controls */
 }
+.custom-table{
+    --v-table-row-height: 30px;
+}
+
 .custom-font {
   font-size: 1rem; /* Adjust the font size as needed */  
 }
