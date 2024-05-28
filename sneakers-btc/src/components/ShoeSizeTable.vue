@@ -27,49 +27,49 @@
               <p>
                 Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
               </p>
-              <h3>Here’s how it works:</h3>
+              <h4>Here’s how it works:</h4>
               <v-row>
-                <v-col>
-                  <v-sheet class="pa-2 ma-2 same-height custom-font">
-                    <v-img
-                    src="/img1.png"
-                    max-height="30"
+              <v-col>
+                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
+                  <v-img
+                    src="@/assets/img1.png"
+                    height="20"
                     class="mr-2"
                   ></v-img>
-                    Place your order today
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet class="pa-2 ma-2 same-height custom-font">
-                    <v-img
-                    src="/img1.png"
-                    max-height="30"
+                  <span>Place your order today</span>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
+                  <v-img
+                    src="@/assets/img1.png"
+                    height="20"
                     class="mr-2"
                   ></v-img>
-                    Wait for your shoes to arrive
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet class="pa-2 ma-2 same-height custom-font">
-                    <v-img
-                    src="/img1.png"
-                    max-height="30"
+                  <span>Wait for your shoes to arrive</span>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
+                  <v-img
+                    src="@/assets/img1.png"
+                    height="20"
                     class="mr-2"
                   ></v-img>
-                    Scan and enter the serial number
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet class="pa-2 ma-2 same-height custom-font">
-                    <v-img
-                    src="/img1.png"
-                    max-height="30"
+                  <span>Scan and enter the serial number</span>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
+                  <v-img
+                    src="@/assets/img1.png"
+                    height="30"
                     class="mr-2"
                   ></v-img>
-                    Mint your one-of-a-kind digital artifact
-                  </v-sheet>
-                </v-col>
-              </v-row>
+                  <span>Mint your one-of-a-kind digital artifact</span>
+                </v-sheet>
+              </v-col>
+            </v-row>
             </div>
             <div class="video-container">
               <iframe
@@ -130,8 +130,10 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex-shrink: 0;
   }
   .info-text {
+    font-size: 1rem;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -142,10 +144,10 @@
   }
   .same-height {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     height: 100%;
-    text-align: center;
+    text-align: left;
     border-radius: 25px;
   }
   .v-data-table {
@@ -158,13 +160,17 @@
     font-size: 1rem;       
   }
   .v-data-table td {
-    font-size: 1rem;
-    max-height: 30px;
+    font-size: 0.9rem;
+   
   }
+
   .v-data-table th {    
-    background-color: #333333!important; /* Custom header background color (optional) */
-    text-align: center; /* Center align the header text */ 
-  }
+  background-color: #333333!important; /* Custom header background color */
+  text-align: center; /* Center align the header text */
+  color: #ffffff;
+  font-weight: bold;
+
+}
   .custom-footer {
   padding: 16px;
   text-align: center;
@@ -175,17 +181,20 @@
   display: none!important; /* Hides the footer with pagination controls */
 }
 .custom-table{
-    --v-table-row-height: 30px;
+    --v-table-row-height: 32px;
 }
 
 .custom-font {
-  font-size: 1rem; /* Adjust the font size as needed */  
+  font-size: 0.7rem; /* Adjust the font size as needed */  
 }
 
-.indent-content {
+.flex-container {
   display: flex;
-  align-items: center;
-  padding-left: 10px; /* Indentation */
+  align-items: center;  
+}
+
+.custom-image {
+  max-height: 30px;  
 }
   </style>
   
