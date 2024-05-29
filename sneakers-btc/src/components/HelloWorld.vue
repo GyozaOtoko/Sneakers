@@ -1,37 +1,37 @@
 <template>
-  <v-container class="fill-height">
-    <v-responsive class="align-center fill-height mx-auto" max-width="1646" max-height="870">
-      <v-row>
-        <v-col cols="12">
-          <v-sheet :elevation="1" height="70vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070">
-            <v-container fluid class="fill-height" style="padding: 0">
-              <v-row class="fill-height align-center" style="padding: 150px">
-                <v-col cols="6" class="squiggly-bg">
-                  <img src="@/assets/images/sneaker.png" />
-                </v-col>
-                <v-col cols="6">
-                  <div>
-                    <p class="title">Bitcoin<br/>Sneakers x OTO</p>
-                    <div style="padding: 30px 0" class="desc">
-                      <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>
-                    </div>
-                    <div class="d-flex">
-                      <div class="text">
-                        <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
-                      </div>
-                      <div class="vr align-self-stretch"></div>
-                      <div class="text">
-                        <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
-                      </div>
-                    </div>
+  <v-container class="fill-height justify-center">
+    <div style="max-width: 1646px; max-height: 870px">
+      <v-sheet :elevation="1" height="70vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 70vh; display: flex">
+        <div style="display: flex; margin: 50px;">
+          <div class="align-center" style="display: flex">
+            <v-col cols="6" class="squiggly-bg">
+            </v-col>
+            <v-col cols="6">
+              <div>
+                <div style="position: relative">
+                  <span class="title" style="margin-bottom: 0">Bitcoin</span>
+                  <span>
+                    <img src="@/assets/images/squiggle_sm2.png"/></span>
+                </div>
+                <p class="title">Sneakers x OTO</p>
+                <div style="padding: 30px 0" class="desc">
+                  <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>
+                </div>
+                <div class="d-flex">
+                  <div class="text">
+                    <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
                   </div>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-sheet>
-        </v-col>
-      </v-row>
-    </v-responsive>
+                  <div class="vr align-self-stretch"></div>
+                  <div class="text">
+                    <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
+                  </div>
+                </div>
+              </div>
+            </v-col>
+          </div>
+        </div>
+      </v-sheet>
+    </div>
   </v-container>
 </template>
 
@@ -71,8 +71,23 @@
   opacity: 0.5
 }
 .squiggly-bg {
-  background-image: url('@/assets/images/squiggle.svg');
-  background-position: top;
-  background-size: cover;
+  background-image: url('@/assets/images/sneakerSquiggle2.png');
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+}
+.sneaker-shadow {
+  top: 760px;
+  left: 363px;
+  width: 573px;
+  height: 29px;
+  /* UI Properties */
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+.squiggle_sm-bg {
+  position: absolute; 
+  background-image: url('@/assets/images/squiggle_sm2.png');
 }
 </style>
