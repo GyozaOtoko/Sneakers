@@ -1,4 +1,10 @@
 <template>
+  <div class="background-images">
+    <img src="@/assets/images/1x1.svg">
+    <img src="@/assets/images/1x2.svg">
+    <img src="@/assets/images/1x3.svg">
+    <img src="@/assets/images/1x4.svg">
+  </div>
   <v-container class="fill-height justify-center">
     <div style="max-width: 1646px; max-height: 870px">
       <v-sheet :elevation="1" height="70vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 70vh; display: flex">
