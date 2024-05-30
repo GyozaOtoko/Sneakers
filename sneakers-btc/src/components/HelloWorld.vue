@@ -93,7 +93,7 @@
       <v-row>
         <v-col>
           <div style="max-width: 337px; max-height: 265px; position: relative; margin: auto;">
-            <v-sheet :elevation="1" height="22vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 20vh; display: flex; align-items: center; justify-content: center;">
+            <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
               <div style="padding: 30px;" class="about-text">
                 <span>Bitcoin Sneakers is a project at the crossroads of fashion, art, and technology.</span>
               </div>
@@ -102,7 +102,7 @@
         </v-col>
         <v-col>
           <div style="max-width: 337px; max-height: 265px; position: relative; margin: auto;">
-            <v-sheet :elevation="1" height="22vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 20vh; display: flex; align-items: center; justify-content: center;">
+            <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
               <div style="padding: 30px;" class="about-text">
                 <span>On February 9th 2023 they made history by becoming the first fashion collection inscribed on Bitcoin.</span>
               </div>
@@ -111,7 +111,7 @@
         </v-col>
         <v-col>
           <div style="max-width: 337px; max-height: 265px; position: relative; margin: auto;">
-            <v-sheet :elevation="1" height="22vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 20vh; display: flex; align-items: center; justify-content: center;">
+            <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
               <div style="padding: 30px;" class="about-text">
                 <span>Following the success of their genesis collection, they embarked on their next venture—a PFP collection designed to be the face of the brand—the Pioneers.</span>
               </div>
@@ -120,7 +120,7 @@
         </v-col>
         <v-col>
           <div style="max-width: 337px; max-height: 265px; position: relative; margin: auto;">
-            <v-sheet :elevation="1" height="22vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 20vh; display: flex; align-items: center; justify-content: center;">
+            <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
               <div style="padding: 30px;" class="about-text">
                 <span>With a limited supply of 888, they quickly sold out, fueling the momentum for their next project: IRL sneakers.</span>
               </div>
@@ -150,83 +150,81 @@
       </div>
     </v-container>
 
-    <v-container fluid>
-      <v-row class="full-height">
-        <v-col cols="4">
-          <v-card class="rounded-table full-height">
-            <v-data-table
-              :headers="headers"
-              :items="shoeSizes"
-              :items-per-page="20"
-              disable-pagination
-              hide-default-footer
-              class="elevation-1 custom-table"
-              
-            >
-              <template v-slot:top></template>
-              <template v-slot:footer>
-              <div class="custom-footer">
-                Custom footer content goes here
-              </div>
-            </template>
-            </v-data-table>
-          </v-card>
-        </v-col>
-        <v-col cols="8">
-          <div class="content-container full-height">
-            <div class="info-text">
-              <p>
-                Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
-              </p>
-              <h4>Here’s how it works:</h4>
-              <v-row class="arrow-row">
-                <v-col class="arrow1" />
-                <v-col class="arrow-squiggle" />
-                <v-col class="arrow2" />
-            </v-row>
+    <v-container>      
+        <v-row class="full-height">
+          <v.col cols="4"></v.col>
+          <v-col cols="4">
+            <v-card class="rounded-table full-height">
+              <v-data-table
+                :headers="headers"
+                :items="shoeSizes"
+                :items-per-page="20"
+                disable-pagination
+                hide-default-footer
+                class="elevation-1 custom-table"                
+              />
+            </v-card>
+          </v-col>
+          <v-col cols="8">
+            <div class="content-container full-height">
+              <div class="info-text">
+                <p>
+                  Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
+                </p>
+                <h4>Here’s how it works:</h4>
+                <v-container :elevation="2" class="justify-center d-flex" style="text-align: center; min-height: 125px; margin-bottom: -75px;">
+                  <v-row justify="center">
+                    <v-col cols="1"></v-col>
+                    <v-col cols="3" class="arrow1"></v-col>
+                    <v-col cols="3" class="arrow-squiggle"></v-col>
+                    <v-col cols="3" class="arrow2"></v-col>
+                    <v-col cols="1"></v-col>
+                  </v-row>           
+                </v-container>
               <v-row>
+                <v-col>
+                  
+                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
+                      <v-container>
+                          <v-row no-gutters>
+                              <v-col md="3" align-self="center">
+                                  <v-img
+                                      src="@/assets/images/shopping-bag.png"
+                                      width="40"
+                                      height="40"
+                                      class="mr-2"
+                                  />
+                              </v-col>
+                              <v-col md="1"/>
+                              <v-col md="8">
+                                  <span>Place your order today</span>
+                              </v-col>
+                            </v-row>
+                        </v-container>
+                  </v-sheet>
+                </v-col>
+                <v-col>
+                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
+                      <v-container>
+                          <v-row no-gutters>
+                              <v-col md="3" align-self="center">
+                                  <v-img
+                                      src="@/assets/images/clock.png"
+                                      width="40"
+                                      height="40"
+                                      class="mr-2"
+                                  />
+                              </v-col>
+                              <v-col md="1"/>
+                              <v-col md="8">
+                                  <span>Wait for your shoes to arrive</span>
+                              </v-col>
+                          </v-row>
+                      </v-container>
+                  </v-sheet>
+                </v-col>
               <v-col>
-                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
-                    <v-container>
-                        <v-row no-gutters>
-                            <v-col md="3" align-self="center">
-                                <v-img
-                                    src="@/assets/images/shopping-bag.png"
-                                    width="40"
-                                    height="40"
-                                    class="mr-2"
-                                />
-                            </v-col>
-                            <v-col md="1"/>
-                            <v-col md="8">
-                                <span>Place your order today</span>
-                            </v-col>
-                </v-row>
-            </v-container>
-                </v-sheet>
-              </v-col>
-              <v-col>
-                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
-                    <v-container>
-                        <v-row no-gutters>
-                            <v-col md="3" align-self="center">
-                                <v-img
-                                    src="@/assets/images/clock.png"
-                                    width="40"
-                                    height="40"
-                                    class="mr-2"
-                                />
-                            </v-col>
-                            <v-col md="1"/>
-                            <v-col md="8">
-                                <span>Wait for your shoes to arrive</span>
-                            </v-col>
-                        </v-row>
-                    </v-container>
-                </v-sheet>
-              </v-col>
-              <v-col>
-                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
                     <v-container>
                         <v-row no-gutters>                            
                             <v-col md="3" align-self="center">
@@ -246,7 +244,7 @@
                 </v-sheet>
               </v-col>
               <v-col>
-                <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
                     <v-container>
                         <v-row no-gutters>
                             <v-col md="3" align-self="center">
@@ -275,6 +273,7 @@
             </div>
           </div>
         </v-col>
+        <v-col cols="4"/>
       </v-row>
     </v-container>
     
@@ -433,9 +432,7 @@
 .menuHover * {
   color: #E87A0A;
 }
-.custom-table{
-    --v-table-row-height: 32px;
-}
+
 .video-container {
     flex-grow: 1;
     display: flex;
@@ -463,6 +460,10 @@
   .v-data-table td {
     font-size: 0.9rem;   
   }
+
+  .custom-table{
+    --v-table-row-height: 25px;
+}
 
   .v-data-table th {    
   background-color: #333333!important; /* Custom header background color */
