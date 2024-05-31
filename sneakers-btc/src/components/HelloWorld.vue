@@ -1,18 +1,18 @@
 <template>
   <div style="position: absolute; width: 100%; top: 0">
-    <img style="position: absolute; left: 0" src="@/assets/images/1x1.svg">
-    <img style="position: absolute; left: 0" src="@/assets/images/1x2.svg">
-    <img style="position: absolute; right: 0" src="@/assets/images/1x3.svg">
-    <img style="position: absolute; right: 0" src="@/assets/images/1x4.svg">
+    <img style="z-index:0;position: absolute; left: 0" src="@/assets/images/1x1.svg">
+    <img style="z-index:0;position: absolute; left: 0" src="@/assets/images/1x2.svg">
+    <img style="z-index:0;position: absolute; right: 0" src="@/assets/images/1x3.svg">
+    <img style="z-index:0;position: absolute; right: 0" src="@/assets/images/1x4.svg">
   </div>
-  <v-app-bar :elevation="0" color="rgba(0,0,0,0)">
+  <v-app-bar :elevation="0" color="rgba(0,0,0,0)" style="position: fixed;">
     <template v-slot:prepend>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
 
     <!-- <v-app-bar-title>Application Bar</v-app-bar-title> -->
 
-    <v-toolbar-items class="hidden-xs-only">
+    <v-toolbar-items class="hidden-xs-only" >
       <template v-for="(item, i) in menuItems" :key="i">
         <v-hover v-slot="{ isHovering, props }">
           <v-btn flat :to="test" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
@@ -28,7 +28,7 @@
       <!-- <v-btn icon="mdi-dots-vertical"></v-btn> -->
     </template>
   </v-app-bar>
-  <v-container class="fill-height justify-center">
+  <v-container class="justify-center"  style="height: 100vh; overflow-y: auto;">
     <div style="max-width: 1646px; max-height: 870px; position: relative">
       <v-sheet :elevation="1" height="70vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 70vh; display: flex">
         <div style="display: flex; margin: 50px;">
@@ -63,7 +63,7 @@
     </div>
     <v-container class="justify-center justify-center d-flex">
       <div style="max-width: 1646px;max-height: 870px;display: flex;flex-direction: column;align-items: center;gap: 5px;cursor: pointer">
-        <div style="font-size: 20px">Scroll down</div>
+        <div style="font-size: 20px;z-index: 2000;">Scroll down</div>
         <div>
           <div style="border-right: 3px solid rgb(255, 255, 255);border-bottom: 3px solid rgb(255, 255, 255);opacity: 0.5;width: 17px;height: 17px;transform: rotate(45deg);"></div>
           <div style="border-right: 3px solid rgb(255, 255, 255);border-bottom: 3px solid rgb(255, 255, 255);width: 17px;height: 17px;transform: rotate(45deg); margin-top:-5px"></div>
@@ -72,19 +72,19 @@
     </v-container>
   </v-container>
 
-  <v-container class="justify-center" style="text-align: center;">
+  <v-container class="justify-center" style="text-align: center; height: 60vh; overflow-y: auto;">
       <v-container :elevation="1" class="justify-center" style="text-align: center;">    
         <v-row justify="right">
           <v-col >
-            <div style="position: absolute; width: 100%;">
-              <img style="position: absolute; left: 0; width: 61%; margin-top: -150px; z-index: 0" src="@/assets/images/arch.svg">
+            <div style="position: absolute; width: 80%; z-index: 0">
+              <img style="position: absolute; left: 0; width: 40%;  margin-left: 50px;" src="@/assets/images/arch.svg">
             </div>
           </v-col>
           <v-spacer/>
         </v-row>    
         <v-row justify="center">          
-            <div style="margin-bottom: 20px;">
-              <span class="about-title" style="margin-bottom: 0">About</span>
+            <div style="margin-bottom: 20px; z-index: 1000">
+              <span class="about-title" style="margin-bottom: 0;  ">About</span>
             </div>
           
         </v-row>
@@ -137,7 +137,7 @@
       </v-row>           
     </v-container>    
   </v-container>
-  <v-container style="text-align: center;" class="flex-row">
+  <v-container style="text-align: center;  overflow-y: auto;" class="flex-row">
       <v-row justify="center" >        
         <v-col cols="7">          
           <div>
@@ -147,110 +147,132 @@
         </v-col>        
       </v-row>
   </v-container>
+ 
+  
 
-  <v-container class="fill-height justify-center" style="text-align: center;">
-      <v-container :elevation="1" class="justify-center" style="text-align: center;">        
-        <v-row justify="center">
-          <v-col>
-            <div style="margin-bottom: 20px;">
-              <span class="about-title" style="margin-bottom: 0">Team</span>
+  <v-container class="fill-height justify-center" style=" height: 50vh; overflow-y: auto;">
+    <v-row no-gutter>
+      <v-col cols="2">    
+        <div style="position: absolute;">
+          <img style="transform: rotate(90deg); position: absolute; z-index: 0;" src="@/assets/images/arch.svg">
+        </div>    
+      </v-col>
+      <v-col cols="10" style="z-index: 1000;">
+        <v-container class="justify-center" style="text-align: center;">        
+          <v-row justify="center">
+            <v-col style="z-index: 1000;">
+              <div style="margin-bottom: 20px;">
+                <span class="about-title" style="margin-bottom: 0; ">Team</span>
+              </div>
+            </v-col>
+          </v-row>        
+        <v-row >
+          <v-col cols="1"/>
+          <v-col cols="4" style="z-index: 1000">        
+            <div class="text" >
+              <span >Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
             </div>
           </v-col>
-        </v-row>        
-      <v-row class="mb-4">
-        <v-col />
-        <v-col>
-        <div class="d-flex">
-          <div class="text">
-            <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
-          </div>
-          
-          <div class="text">
-            <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
-          </div>
-         </div>  
-        </v-col>
-        <v-col />
-      </v-row>
-        <v-container :elevation="2" class="justify-center d-flex" style="text-align: center; min-height: 125px; margin-bottom: -75px;">
-            <v-row justify="center">
-                <v-col cols="1"></v-col>
-                <v-col>
-                  <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 50vh; display: flex; align-items: center; justify-content: center;">
-                      <v-container>
-                          <v-row >
-                              <v-col align-self="center">
-                                  <v-img
-                                      src="@/assets/images/DayTripper.png"
-                                      width="100%"                                                                             
-                                  />
-                              </v-col>                              
-                          </v-row>
-                          <v-row justify="center">
-                            <div style="padding-top: 10px; text-align: center;" class="about-text">
-                              <span>DAYTRIPPER</span>
-                            </div>
-                          </v-row>
-                          <v-row justify="center">                           
-                              <span>Founder</span>                           
-                          </v-row>
-                      </v-container>
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 55vh; display: flex; align-items: center; justify-content: center;">
-                      <v-container>
-                          <v-row no-gutter>
-                              <v-col align-self="center">
-                                  <v-img
-                                      src="@/assets/images/Gyoza.png"
-                                      width="100%"                                      
-                                  />
-                              </v-col>                              
-                          </v-row>
-                          <v-row justify="center">
-                            <div style="padding-top: 10px; text-align: center;" class="about-text">
-                              <span>GYOZA</span>
-                            </div>
-                          </v-row>
-                          <v-row justify="center">                           
-                              <span>Developer</span>                           
-                          </v-row>
-                      </v-container>
-                  </v-sheet>
-                </v-col>
-                <v-col >
-                  <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 50vh; display: flex; align-items: center; justify-content: center;">
-                      <v-container>
-                          <v-row >
-                              <v-col align-self="center">
-                                  <v-img
-                                      src="@/assets/images/Vincen.png"
-                                      width="100%"                                    
-                                  />
-                              </v-col>                              
-                          </v-row>
-                          <v-row justify="center">
-                            <div style="padding-top: 20px; text-align: center;" class="about-text">
-                              <span>VINCEN</span>
-                            </div>
-                          </v-row>
-                          <v-row justify="center">                           
-                              <span>Artist</span>                           
-                          </v-row>
-                          <v-row justify="center">                           
-                            <v-btn text href="www.x.com/daytripperNFT" class="artist-link">
-                              www.x.com/daytripperNFT
-                            </v-btn>
-                          </v-row>
-                      </v-container>
-                  </v-sheet>
-                </v-col>
-                <v-col cols="1"></v-col>
-            </v-row>
-          </v-container>
-      
-    </v-container>
+          <v-col cols="1"/>
+          <v-col cols="4" style="z-index: 1000">
+            <div class="text">
+              <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
+            </div>
+          </v-col>
+          <v-col cols="1"/>
+        </v-row>
+        <v-row>
+          <v-container :elevation="2" class="justify-center d-flex" style="text-align: center; min-height: 125px; margin-bottom: -75px;">
+              <v-row justify="center">
+                  <v-col cols="1"></v-col>
+                  <v-col style="z-index: 1000">
+                    <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 65vh; display: flex; align-items: center; justify-content: center;">
+                        <v-container>
+                            <v-row >
+                                <v-col align-self="center">
+                                    <v-img
+                                        src="@/assets/images/DayTripper.png"
+                                        width="100%"                                                                             
+                                    />
+                                </v-col>                              
+                            </v-row>
+                            <v-row justify="center">
+                              <div style="padding-top: 10px; text-align: center;" class="about-text">
+                                <span>DAYTRIPPER</span>
+                              </div>
+                            </v-row>
+                            <v-row justify="center">                           
+                                <span>Founder</span>                           
+                            </v-row>
+                            <v-row justify="center">                           
+                              <v-btn text href="www.x.com/daytripperNFT" class="team-link">
+                                www.x.com/daytripperNFT
+                              </v-btn>
+                            </v-row>
+                        </v-container>
+                    </v-sheet>
+                  </v-col>
+                  <v-col style="z-index: 1000">
+                    <v-sheet  color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 65vh; display: flex; align-items: center; justify-content: center;">
+                        <v-container>
+                            <v-row>
+                                <v-col align-self="center">
+                                    <v-img
+                                        src="@/assets/images/Gyoza.png"
+                                        width="100%"                                      
+                                    />
+                                </v-col>                              
+                            </v-row>
+                            <v-row justify="center">
+                              <div style="padding-top: 10px; text-align: center;" class="about-text">
+                                <span>GYOZA</span>
+                              </div>
+                            </v-row>
+                            <v-row justify="center">                           
+                                <span>Developer</span>                           
+                            </v-row>
+                            <v-row justify="center">                           
+                              <v-btn text href="www.x.com/daytripperNFT" class="team-link">
+                                www.x.com/daytripperNFT
+                              </v-btn>
+                            </v-row>
+                        </v-container>
+                    </v-sheet>
+                  </v-col>
+                  <v-col style="z-index: 1000">
+                    <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 65vh; display: flex; align-items: center; justify-content: center;">
+                        <v-container>
+                            <v-row >
+                                <v-col align-self="center">
+                                    <v-img
+                                        src="@/assets/images/Vincen.png"
+                                        width="100%"                                    
+                                    />
+                                </v-col>                              
+                            </v-row>
+                            <v-row justify="center">
+                              <div style="padding-top: 20px; text-align: center;" class="about-text">
+                                <span>VINCEN</span>
+                              </div>
+                            </v-row>
+                            <v-row justify="center">                           
+                                <span>Artist</span>                           
+                            </v-row>
+                            <v-row justify="center">                           
+                              <v-btn text href="www.x.com/daytripperNFT" class="team-link">
+                                www.x.com/daytripperNFT
+                              </v-btn>
+                            </v-row>
+                        </v-container>
+                    </v-sheet>
+                  </v-col>
+                  <v-col cols="1"></v-col>
+              </v-row>
+            </v-container>
+          </v-row>
+      </v-container>
+      </v-col>
+  </v-row>
   </v-container>
 
   <v-container>      
@@ -454,7 +476,8 @@
   letter-spacing: 2px;
   color: #FFFFFF;
   font-stretch: 1% 150%;
-  opacity: 0.6
+  opacity: 1;
+  z-index: 1000;
 }
 .desc {
   text-align: left;
@@ -491,14 +514,14 @@
   background-image: url('@/assets/images/arrow1.svg');
   background-position: center;
   background-size: contain;
-  height: 100%;
+  height: 80%;
   z-index: 1000;
 }
 .arrow2 {
   background-image: url('@/assets/images/arrow2.svg');
   background-position: center;
   background-size: contain;
-  height: 100%;
+  height: 80%;
   z-index: 1000;
 }
 .arrow-squiggle {
@@ -512,21 +535,21 @@
   background-image: url('@/assets/images/orange_arrow1.svg');
   background-position: center;
   background-size: contain;
-  height: 100%;
+  height: 125%;
   z-index: 1000;
 }
 .orange-arrow2 {
   background-image: url('@/assets/images/orange_arrow2.svg');
   background-position: center;
   background-size: contain;
-  height: 100%;
+  height: 125%;
   z-index: 1000;
 }
 .orange-arrow-squiggle {
   background-image: url('@/assets/images/orange_arrow_sqiggle.svg');
   background-position: center;
   background-size: contain;
-  height: 100%;
+  height: 125%;
   z-index: 1000;
 }
 
@@ -633,13 +656,13 @@
     flex-shrink: 0;
   }
 
-  .artist-link {
+  .team-link {    
     text-decoration: none;
     color: inherit; /* Adjust to match your desired link color */
     font-size: 0.8rem; /* Adjust the font size if needed */  
   }
 
-  .v-btn.artist-link {
+  .v-btn.team-link {    
     text-transform: none;
   }
   </style>

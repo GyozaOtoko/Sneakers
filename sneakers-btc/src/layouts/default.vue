@@ -3,7 +3,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <AppFooter />
+    <AppFooter style="position: fixed;"/>
   </v-app>
 </template>
 
