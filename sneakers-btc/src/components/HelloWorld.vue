@@ -275,7 +275,7 @@
   </v-row>
   </v-container>
 
-  <v-container>      
+  <v-container >      
     <v-row class="full-height">
       <v.col cols="4"></v.col>
       <v-col cols="4">
@@ -283,21 +283,20 @@
             <v-data-table
                 :headers="headers"
                 :items="shoeSizes"
-                :items-per-page="20"
-                disable-pagination
-                hide-default-footer
-                class="elevation-1 custom-table"                
-              />
+                :items-per-page="20"                
+                hide-default-footer                
+              >            
+            </v-data-table> 
           </v-card>
       </v-col>
           <v-col cols="8">
             <div class="content-container full-height">
               <div class="info-text">
-                <p>
+                <p style="padding-bottom:5px">
                   Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
                 </p>
                 <h4>Here’s how it works:</h4>
-                <v-container :elevation="2" class="justify-center d-flex" style="text-align: center; min-height: 125px; margin-bottom: -75px;">
+                <v-container  class="justify-center d-flex" style="text-align: center; min-height: 125px; margin-bottom: -75px;">
                   <v-row justify="center">
                     <v-col cols="1"></v-col>
                     <v-col cols="3" class="arrow1"></v-col>
@@ -308,7 +307,7 @@
                 </v-container>
               <v-row>
                 <v-col>                  
-                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
+                  <v-sheet  height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
                       <v-container>
                           <v-row no-gutters>
                               <v-col md="3" align-self="center">
@@ -328,7 +327,7 @@
                   </v-sheet>
                 </v-col>
                 <v-col>
-                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
+                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
                       <v-container>
                           <v-row no-gutters>
                               <v-col md="3" align-self="center">
@@ -348,7 +347,7 @@
                   </v-sheet>
                 </v-col>
               <v-col>
-                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
                     <v-container>
                         <v-row no-gutters>                            
                             <v-col md="3" align-self="center">
@@ -368,7 +367,7 @@
                 </v-sheet>
               </v-col>
               <v-col>
-                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 30vh; display: flex; align-items: center; justify-content: center;">
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
                     <v-container>
                         <v-row no-gutters>
                             <v-col md="3" align-self="center">
@@ -387,14 +386,16 @@
                     </v-container>
                 </v-sheet>
               </v-col>
-            </v-row>
-              </div>
+            </v-row>            
+          </div>
+          <v-row style="padding-top:25px;padding-bottom:20px;">
               <div class="video-container">
                 <video width="100%" height="100%" controls>
                   <source src="@/assets/images/Sequence 02.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                 </video>
               </div>
+          </v-row>
           </div>
         </v-col>
       <v-col cols="4"/>
@@ -600,8 +601,7 @@
 .video-container {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
-    border-radius: 15px;
+    justify-content: center;    
   }
   .same-height {
     display: flex;
@@ -626,17 +626,25 @@
   }
 
   .custom-table{
-    --v-table-row-height: 25px;
+    --v-table-row-height: 30px!important;
+  }
+
+.custom-footer {
+  padding: 16px;
+  text-align: center;
+  background-color: #333333;
+  color: #ffffff;
 }
+  
 
   .v-data-table th {    
   background-color: #333333!important; /* Custom header background color */
-  text-align: center; /* Center align the header text */
+  text-align: center!important; /* Center align the header text */
   color: #ffffff;
   font-weight: bold;  
 }
 .v-container.full-height {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
   }
