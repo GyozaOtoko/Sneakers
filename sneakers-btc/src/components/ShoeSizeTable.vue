@@ -28,58 +28,106 @@
                 Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
               </p>
               <h4>Here’s how it works:</h4>
+              <v-row class="arrow-row">
+              <v-col>
+                <img src="@/assets/Group 95.svg" class="arrow-img1" />
+              </v-col>
+              <v-col>
+                <img src="@/assets/Group 97.svg" class="arrow-img2" />
+              </v-col>
+              <v-col>
+                <img src="@/assets/Group 95.svg" class="arrow-img3" />
+              </v-col>
+              
+            </v-row>
               <v-row>
               <v-col>
                 <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
-                  <v-img
-                    src="@/assets/img1.png"
-                    height="20"
-                    class="mr-2"
-                  ></v-img>
-                  <span>Place your order today</span>
+                    <v-container>
+                        <v-row no-gutters>
+                            <v-col md="3" align-self="center">
+                                <v-img
+                                    src="@/assets/shopping-bag.png"
+                                    width="40"
+                                    height="40"
+                                    class="mr-2"
+                                />
+                            </v-col>
+                            <v-col md="1"/>
+                            <v-col md="8">
+                                <span>Place your order today</span>
+                            </v-col>
+                </v-row>
+            </v-container>
                 </v-sheet>
               </v-col>
               <v-col>
                 <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
-                  <v-img
-                    src="@/assets/img1.png"
-                    height="20"
-                    class="mr-2"
-                  ></v-img>
-                  <span>Wait for your shoes to arrive</span>
+                    <v-container>
+                        <v-row no-gutters>
+                            <v-col md="3" align-self="center">
+                                <v-img
+                                    src="@/assets/clock.png"
+                                    width="40"
+                                    height="40"
+                                    class="mr-2"
+                                />
+                            </v-col>
+                            <v-col md="1"/>
+                            <v-col md="8">
+                                <span>Wait for your shoes to arrive</span>
+                            </v-col>
+                        </v-row>
+                    </v-container>
                 </v-sheet>
               </v-col>
               <v-col>
                 <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
-                  <v-img
-                    src="@/assets/img1.png"
-                    height="20"
-                    class="mr-2"
-                  ></v-img>
-                  <span>Scan and enter the serial number</span>
+                    <v-container>
+                        <v-row no-gutters>                            
+                            <v-col md="3" align-self="center">
+                                <v-img
+                                    src="@/assets/scan.png"
+                                    width="40"
+                                    height="40"
+                                    class="mr-2"
+                                />
+                            </v-col>
+                            <v-col md="1"/>
+                            <v-col md="8">
+                                 <span>Scan and enter the serial number</span>
+                             </v-col>
+                        </v-row>
+                    </v-container>
                 </v-sheet>
               </v-col>
               <v-col>
                 <v-sheet class="pa-2 ma-2 same-height custom-font flex-container">
-                  <v-img
-                    src="@/assets/img1.png"
-                    height="30"
-                    class="mr-2"
-                  ></v-img>
-                  <span>Mint your one-of-a-kind digital artifact</span>
+                    <v-container>
+                        <v-row no-gutters>
+                            <v-col md="3" align-self="center">
+                                <v-img
+                                 src="@/assets/nft.png"
+                                height="40"
+                                width="40"
+                                class="mr-2"
+                                />
+                            </v-col>
+                            <v-col md="1"/>
+                            <v-col md="8">
+                                <span>Mint your one-of-a-kind digital artifact</span>
+                            </v-col>
+                        </v-row>
+                    </v-container>
                 </v-sheet>
               </v-col>
             </v-row>
             </div>
             <div class="video-container">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/2iQ93L0jV6c"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+                <video width="100%" height="100%" controls>
+              <source src="@/assets/Sequence 02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             </div>
           </div>
         </v-col>
@@ -141,9 +189,11 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    border-radius: 15px;
   }
   .same-height {
     display: flex;
+    flex-grow: 0;
     align-items: left;
     justify-content: left;
     height: 100%;
@@ -160,8 +210,7 @@
     font-size: 1rem;       
   }
   .v-data-table td {
-    font-size: 0.9rem;
-   
+    font-size: 0.9rem;   
   }
 
   .v-data-table th {    
@@ -169,7 +218,7 @@
   text-align: center; /* Center align the header text */
   color: #ffffff;
   font-weight: bold;
-
+  
 }
   .custom-footer {
   padding: 16px;
@@ -185,7 +234,7 @@
 }
 
 .custom-font {
-  font-size: 0.7rem; /* Adjust the font size as needed */  
+  font-size: 1rem; /* Adjust the font size as needed */  
 }
 
 .flex-container {
@@ -194,7 +243,33 @@
 }
 
 .custom-image {
-  max-height: 30px;  
+    max-height: 30px;  
+}
+.arrow-row {
+  margin-bottom: -50px;
+  text-align: center;
+}
+.arrow-img1 {
+    width: 60%;
+  margin-left: 170px;
+  padding-top: 65px;
+  padding-right: 80px;
+  padding-left: -1px;
+}
+.arrow-img2{
+  width: 60%;
+  margin-left: 70px;
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-left: -1px;
+}
+
+.arrow-img3 {
+    width: 60%;
+  margin-left: -70px;
+  padding-top: 65px;
+  padding-right: 80px;
+  padding-left: -1px;
 }
   </style>
   
