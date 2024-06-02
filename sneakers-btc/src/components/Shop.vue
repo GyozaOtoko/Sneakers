@@ -61,9 +61,9 @@ onMounted(() => {
           primaryButtonText: "#FFFFFF",
         }
       },
-      onSuccess: event => console.log(event),
-      onError: event => console.log(event),
-      onPending: event => console.log(event),
+      onSuccess: (event: any) => console.log(event),
+      onError: (event: any) => console.log(event),
+      onPending: (event: any) => console.log(event),
       onCancel: () => console.log("Cancelled payment"),
       onStartPayment: () => console.log("Starting payment"),
     }

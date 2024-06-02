@@ -117,6 +117,16 @@ const collection = computed(() => {
       text: [`"Bitcoin Sneakers" is a groundbreaking NFT collection that seamlessly fuses the worlds of cryptocurrency and fashion, offering enthusiasts a unique and stylish way to express their passion for both. This digital art collection features a series of meticulously designed PNGs showcasing an exclusive lineup of sneakers, each intricately crafted with a nod to the iconic Bitcoin symbol.`, `Immerse yourself in the world of digital couture as "Bitcoin Sneakers" brings together the decentralized beauty of blockchain technology and the timeless appeal of high-end footwear. Each PNG file within the collection captures the essence of luxury sneakers, meticulously detailed with a distinctive Bitcoin twist, creating a visual symphony of style and symbolism.`]
     }
   }
+  else return {
+    name: ``,
+    created: '',
+    supply: 0,
+    size: 0,
+    size_unit: '',
+    fee: 0,
+    range: '',
+    text: []
+  }
 });
 
 const collectionItems = computed(() => {
@@ -138,7 +148,7 @@ onMounted(() => {
   //build traitCategories
   pioneersData.forEach(item => {
     item.meta.attributes.forEach((att: {trait_type: string, value: string}) => {
-      if(!traitCategories.find(item => item.traitType == att.trait_type)) {
+      if(!traitCategories.find((item: any) => item.traitType == att.trait_type)) {
         //initialize the traitCategories array
         traitCategories.push({
           traitType: att.trait_type, 
@@ -147,7 +157,7 @@ onMounted(() => {
         })
       }
       else {
-        let tempTraitItem = traitCategories.find(item => item.traitType == att.trait_type);
+        let tempTraitItem = traitCategories.find((item: any) => item.traitType == att.trait_type);
         if (!tempTraitItem.values.includes(att.value)) {
           tempTraitItem.values.push(att.value);
         }
