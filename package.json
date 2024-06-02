@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "vite": "^5.2.12",
+    "vue": "^3.4.27",
+    "vuetify": "^3.6.0-beta.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}

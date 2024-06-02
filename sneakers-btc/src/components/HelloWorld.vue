@@ -6,7 +6,23 @@
     <img style="position: absolute; right: 0" src="@/assets/images/1x4.svg">
   </div>
   <v-container class="fill-height justify-center">
+    
     <HeroSplash />
+    
+  <v-container class="justify-center d-flex" >
+    <About />
+  </v-container>
+
+  <v-container class="justify-center d-flex" >
+    <Team />
+  </v-container>
+
+  <v-container class="justify-center d-flex" >
+    <ShoeSizes />
+  </v-container>
+    
+
+   
     <!-- <ScrollDown /> -->
     <v-container class="justify-center d-flex" style="margin-top: 150px; position: relative">
       <div id="collections" style="max-width: 1400px; display: flex; flex-direction: column; align-items: center;">
@@ -17,6 +33,7 @@
       </div>
     </v-container>
     <Shop />
+ 
   </v-container>
 </template>
 
