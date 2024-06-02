@@ -8,9 +8,9 @@
   <HeaderMenu />
   <v-container class="fill-height justify-center">
     <HeroSplash />
-    <ScrollDown />
+    <!-- <ScrollDown /> -->
     <v-container class="justify-center d-flex" style="margin-top: 150px; position: relative">
-      <div id="collections" style="max-width: 1646px; max-height: 870px; display: flex; flex-direction: column; align-items: center;">
+      <div id="collections" style="max-width: 1646px; display: flex; flex-direction: column; align-items: center;">
         <h2 class="title">Collections</h2>
           <Collections collection="sneakers"/>
           <div style="margin: 50px 0"></div>
@@ -142,7 +142,7 @@
 .menuHover * {
   color: #E87A0A;
 }
-.coll_title { grid-area: title; font: normal normal bold 30px/30px ITC Avant Garde Gothic W02 Md; letter-spacing: 2px;}
+.coll_title { grid-area: title; font: normal normal bold 30px/30px ITC Avant Garde Gothic W02 Md; letter-spacing: 2px; align-self: center}
 .coll_date { grid-area: date; font: normal normal normal 16px/17px Helvetica Neue; letter-spacing: -0.32px;}
 .coll_filter { grid-area: filter; }
 .coll_search { grid-area: search; }
@@ -151,7 +151,7 @@
   grid-template-areas:
     'title date'
     'title filter'
-    'search search';
+    'title search';
   gap: 10px;
 };
 </style>

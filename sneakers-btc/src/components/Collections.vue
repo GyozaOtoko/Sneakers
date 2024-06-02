@@ -69,10 +69,10 @@
       </v-sheet>
     </div>
   </div>
-  <v-sheet :elevation="1" color="black" rounded style="border-radius: 30px; border: 1px solid #707070; width: 100%;max-height: 650px;overflow: auto;">
-    <div style="display: grid; grid-auto-rows: auto; grid-template-columns: repeat(auto-fit, 150px);">
-      <template v-for="(item, index) in collectionItems">
-        <div style="">{{ item.meta.name }}</div>
+  <v-sheet :elevation="1" color="black" rounded style="border-radius: 30px; border: 1px solid #707070; width: 100%; height: 650px; overflow: auto; margin-top: 30px">
+    <div style="display: grid; grid-auto-rows: auto; grid-template-columns: repeat(4, 1fr); gap:15px; margin: 30px">
+      <template v-for="(item, index) in collectionItems" :key="index">
+        <CollectionCard :collectionItem=item :collectionName=props.collection />
       </template>
     </div>
   </v-sheet>
@@ -81,6 +81,7 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
 import pioneersData from '@/assets/json/pioneersMetadata.json'
+import sneakersData from '@/assets/json/sneakersMetadata.json'
 
 let dialog = false;
 
@@ -117,7 +118,7 @@ const collectionItems = computed(() => {
     return pioneersData;
   }
   else if (props.collection == 'sneakers') {
-    return null;
+    return sneakersData;
   }
 })
 
