@@ -9,7 +9,7 @@
     <HeroSplash />
     <!-- <ScrollDown /> -->
     <v-container class="justify-center d-flex" style="margin-top: 150px; position: relative">
-      <div id="collections" style="max-width: 1646px; display: flex; flex-direction: column; align-items: center;">
+      <div id="collections" style="max-width: 1400px; display: flex; flex-direction: column; align-items: center;">
         <h2 class="title">Collections</h2>
           <Collections collection="sneakers"/>
           <div style="margin: 50px 0"></div>

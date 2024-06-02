@@ -25,7 +25,7 @@
         <div id="helioCheckoutContainer" ref="el"></div>
         <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
           <p class="shopDisclaimer">
-            Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant. See our terms
+            Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
           </p>
         </v-sheet>
       </div>

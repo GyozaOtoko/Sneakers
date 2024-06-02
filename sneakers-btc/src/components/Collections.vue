@@ -76,7 +76,7 @@
       </template>
     </div>
   </v-sheet>
-  <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px">
+  <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px; gap: 20px">
     <p>{{ collection.text[0] }}</p>
     <p>{{ collection.text[1] }}</p>
   </div>
