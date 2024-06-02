@@ -16,6 +16,7 @@
           <Collections collection="pioneers"/>
       </div>
     </v-container>
+    <Shop />
   </v-container>
 </template>
 
