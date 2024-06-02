@@ -5,7 +5,6 @@
     <img style="position: absolute; right: 0" src="@/assets/images/1x3.svg">
     <img style="position: absolute; right: 0" src="@/assets/images/1x4.svg">
   </div>
-  <HeaderMenu />
   <v-container class="fill-height justify-center">
     <HeroSplash />
     <!-- <ScrollDown /> -->
