@@ -76,6 +76,10 @@
       </template>
     </div>
   </v-sheet>
+  <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px">
+    <p>{{ collection.text[0] }}</p>
+    <p>{{ collection.text[1] }}</p>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -97,7 +101,8 @@ const collection = computed(() => {
       size: 114.711,
       size_unit: 'Kb',
       fee: 0.0232,
-      range: '20,168,976 - 24,736,954'
+      range: '20,168,976 - 24,736,954',
+      text: [`Introducing "Pioneers", an extraordinary NFT collection that breathes life into the digital frontier through a vibrant ensemble of 2D cartoon-style characters. These captivating individuals stand as the embodiment of collaboration, creativity, and innovation, uniting their diverse talents and skills in a quest for progress and excellence.`,`In the whimsical world of "Pioneers", each character is a unique manifestation of creativity and resilience, echoing the spirit of those who dare to forge new paths. With their animated expressions and distinctive personalities, these pioneers are not just characters but storytellers, inviting you to join them on an exhilarating journey of discovery.`]
     }
   }
   else if (props.collection == 'sneakers') {
@@ -108,7 +113,8 @@ const collection = computed(() => {
       size: 3.186,
       size_unit: 'MB',
       fee: 0.0382,
-      range: '44,703 - 406,646' 
+      range: '44,703 - 406,646',
+      text: [`"Bitcoin Sneakers" is a groundbreaking NFT collection that seamlessly fuses the worlds of cryptocurrency and fashion, offering enthusiasts a unique and stylish way to express their passion for both. This digital art collection features a series of meticulously designed PNGs showcasing an exclusive lineup of sneakers, each intricately crafted with a nod to the iconic Bitcoin symbol.`, `Immerse yourself in the world of digital couture as "Bitcoin Sneakers" brings together the decentralized beauty of blockchain technology and the timeless appeal of high-end footwear. Each PNG file within the collection captures the essence of luxury sneakers, meticulously detailed with a distinctive Bitcoin twist, creating a visual symphony of style and symbolism.`]
     }
   }
 });
@@ -151,3 +157,12 @@ onMounted(() => {
   console.log(JSON.stringify(traitCategories))
 })
 </script>
+
+<style>
+.collection_text {
+  font: normal normal normal 16px/20px Helvetica Neue;
+  letter-spacing: -0.48px;
+  color: #FFFFFF;
+  opacity: 0.5
+}
+</style>
