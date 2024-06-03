@@ -7,7 +7,7 @@
     <v-toolbar-items class="hidden-xs-only">
       <template v-for="(item) in menuItems" :key="i">
         <v-hover v-slot="{ isHovering, props }">
-          <v-btn flat :to="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
+          <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
         </v-hover>
       </template>
     </v-toolbar-items>
@@ -28,3 +28,9 @@
     { title: 'Shop', path: '#shop', icon: 'lock_open' }
   ];
 </script>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
