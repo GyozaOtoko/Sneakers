@@ -198,10 +198,6 @@
   font-size: 0.9rem;
 }
 
-.custom-table {
-  --v-table-row-height: 30px !important;
-}
-
 .custom-font {
   font-size: 1rem;
   /* Adjust the font size as needed */
@@ -257,7 +253,6 @@
   flex-shrink: 0;
 }
 </style>
-
 
 <script setup lang="ts">
 
