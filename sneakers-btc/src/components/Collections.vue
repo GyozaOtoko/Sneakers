@@ -71,7 +71,7 @@
   </div>
   <v-sheet :elevation="1" color="black" rounded style="border-radius: 30px; border: 1px solid #707070; width: 100%; height: 650px; overflow: auto; margin-top: 30px">
     <div style="display: grid; grid-auto-rows: auto; grid-template-columns: repeat(4, 1fr); gap:15px; margin: 30px">
-      <template v-for="(item, index) in collectionItems" :key="index">
+      <template v-for="(item) in collectionItems" :key="index">
         <CollectionCard :collectionItem=item :collectionName=props.collection />
       </template>
     </div>
@@ -83,11 +83,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
+import { onMounted, computed } from 'vue';
 import pioneersData from '@/assets/json/pioneersMetadata.json'
 import sneakersData from '@/assets/json/sneakersMetadata.json'
-
-let dialog = false;
 
 const props = defineProps(['collection'])
 console.log(props.collection)

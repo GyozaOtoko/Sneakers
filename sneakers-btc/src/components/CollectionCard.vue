@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed, onBeforeMount } from 'vue';
 
 const props = defineProps(['collectionItem', 'collectionName']);
 console.log(props.collectionName)

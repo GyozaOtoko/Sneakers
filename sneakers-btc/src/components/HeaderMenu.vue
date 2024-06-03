@@ -5,7 +5,7 @@
     </template>
     <!-- <v-app-bar-title>Application Bar</v-app-bar-title> -->
     <v-toolbar-items class="hidden-xs-only">
-      <template v-for="(item, i) in menuItems" :key="i">
+      <template v-for="(item) in menuItems" :key="i">
         <v-hover v-slot="{ isHovering, props }">
           <v-btn flat :to="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
         </v-hover>
@@ -20,7 +20,6 @@
 </template>
 
 <script setup lang="ts">
-const sidebar = false;
   const menuItems = [
     { title: 'Home', path: '#home', icon: 'home' },
     { title: 'About', path: '#about', icon: 'face' },

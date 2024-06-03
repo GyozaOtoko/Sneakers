@@ -55,7 +55,7 @@
                                 <span>Founder</span>                           
                             </v-row>
                             <v-row justify="center">                           
-                              <v-btn text href="www.x.com/daytripperNFT" class="team-link">
+                              <v-btn type="text" href="www.x.com/daytripperNFT" class="team-link">
                                 www.x.com/daytripperNFT
                               </v-btn>
                             </v-row>
@@ -82,7 +82,7 @@
                                 <span>Developer</span>                           
                             </v-row>
                             <v-row justify="center">                           
-                              <v-btn text href="www.x.com/daytripperNFT" class="team-link">
+                              <v-btn type="text" href="www.x.com/daytripperNFT" class="team-link">
                                 www.x.com/daytripperNFT
                               </v-btn>
                             </v-row>
@@ -109,7 +109,7 @@
                                 <span>Artist</span>                           
                             </v-row>
                             <v-row justify="center">                           
-                              <v-btn text href="www.x.com/daytripperNFT" class="team-link">
+                              <v-btn type="text" href="www.x.com/daytripperNFT" class="team-link">
                                 www.x.com/daytripperNFT
                               </v-btn>
                             </v-row>

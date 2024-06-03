@@ -44,8 +44,6 @@ declare global {
     }
 }
 
-let helioLoaded = false;
-
 onMounted(() => {
   let helioCheckoutContainer = el.value;
 
@@ -68,7 +66,6 @@ onMounted(() => {
       onStartPayment: () => console.log("Starting payment"),
     }
   );
-  helioLoaded = true;
 })
 
 </script>
