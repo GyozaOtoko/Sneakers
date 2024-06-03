@@ -9,35 +9,35 @@
         <v-container style="height: 125px; margin-bottom: -85px;">
           <v-row justify="center" style="height: 125px">
               <v-col cols="1"></v-col>
-              <v-col cols="3" class="orange-arrow1"></v-col>
+              <v-col cols="3" class="orange-arrow1 d-none d-lg-flex"></v-col>
               <v-col cols="3" class="orange-arrow-squiggle"></v-col>
-              <v-col cols="3" class="orange-arrow2"></v-col>
+              <v-col cols="3" class="orange-arrow2 d-none d-lg-flex"></v-col>
               <v-col cols="1"></v-col>
           </v-row>
         </v-container>
       <v-row class="mb-4">
-        <v-col>
+        <v-col cols="6" md="3">
           <v-sheet :elevation="1"  color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded class="about-card" style="">
             <div style="padding: 30px;" class="about-text">
               <span class="text">Bitcoin Sneakers is a project at the crossroads of fashion, art, and technology.</span>
             </div>
           </v-sheet>
         </v-col>
-        <v-col>
+        <v-col cols="6" md="3">
           <v-sheet :elevation="1"  color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded class="about-card" style="">
             <div style="padding: 30px;" class="about-text">
               <span class="text">On February 9th 2023 they made history by becoming the first fashion collection inscribed on Bitcoin.</span>
             </div>
           </v-sheet>
         </v-col>
-        <v-col>
+        <v-col cols="6" md="3">
           <v-sheet :elevation="1"  color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded class="about-card" style="">
             <div style="padding: 30px;" class="about-text">
               <span class="text">Following the success of their genesis collection, they embarked on their next venture—a PFP collection designed to be the face of the brand—the Pioneers.</span>
             </div>
           </v-sheet>
         </v-col>
-        <v-col>
+        <v-col cols="6" md="3">
           <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded class="about-card" style="">
             <div style="padding: 30px;" class="about-text">
               <span class="text">With a limited supply of 888, they quickly sold out, fueling the momentum for their next project: IRL sneakers.</span>
