@@ -1,9 +1,9 @@
 <template>
-  <div id="shoesizes" style="max-width: 1646px; max-height: 870px; position: relative">
+  <div id="shoesizes" style="max-width: 1400px; position: relative; margin-top: 200px">
     <v-container>
-      <v-row class="full-height">
+      <v-row>
         <v-col cols="12" lg="4">
-          <v-card class="rounded-table full-height">
+          <v-card class="rounded-table" style="padding: 20px">
             <v-data-table :headers="headers" :items="shoeSizes" :items-per-page="20" hide-default-footer>
             </v-data-table>
             <div style="padding:20px; text-align: left; font-size: 0.9rem;">Since the sizeas are in <span
@@ -12,7 +12,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" lg="8">
-          <div class="content-container full-height">
+          <div class="content-container">
             <div class="info-text">
               <p style="padding-bottom:5px; opacity:0.5">
                 Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining
@@ -112,20 +112,6 @@
           </div>
         </v-col>
       </v-row>
-      <v-container class="justify-center justify-center d-flex">
-        <div
-          style="max-width: 1646px;max-height: 870px;display: flex;flex-direction: column;align-items: center;gap: 5px;cursor: pointer">
-          <div style="font-size: 20px">Scroll down</div>
-          <div>
-            <div
-              style="border-right: 3px solid rgb(255, 255, 255);border-bottom: 3px solid rgb(255, 255, 255);opacity: 0.5;width: 17px;height: 17px;transform: rotate(45deg);">
-            </div>
-            <div
-              style="border-right: 3px solid rgb(255, 255, 255);border-bottom: 3px solid rgb(255, 255, 255);width: 17px;height: 17px;transform: rotate(45deg); margin-top:-5px">
-            </div>
-          </div>
-        </div>
-      </v-container>
     </v-container>
   </div>
 </template>

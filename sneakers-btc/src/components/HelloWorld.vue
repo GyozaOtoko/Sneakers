@@ -7,15 +7,8 @@
   </div>
   <v-container class="fill-height justify-center">
     <HeroSplash />
-    <v-container class="justify-center d-flex">
-      <About />
-    </v-container>
-    <v-container class="justify-center d-flex">
-      <Team />
-    </v-container>
-    <v-container class="justify-center d-flex">
-      <ShoeSizes />
-    </v-container>
+    <About />
+    <Team />
     <!-- <ScrollDown /> -->
     <v-container class="justify-center d-flex" style="margin-top: 150px; position: relative">
       <div id="collections" style="max-width: 1400px; display: flex; flex-direction: column; align-items: center;">
@@ -26,6 +19,7 @@
       </div>
     </v-container>
     <Shop />
+    <ShoeSizes />
   </v-container>
 </template>
 
