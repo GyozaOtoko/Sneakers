@@ -76,6 +76,28 @@
   opacity: 0.5;
 }
 
+
+::-webkit-scrollbar {  
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+/* The scrollbar track (background) */
+::-webkit-scrollbar-track {
+  margin-top: 150px;
+  margin-bottom: 130px;  
+  background: #151617; 
+  border-radius: 10px;
+}
+/* The scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #E87A0A; 
+  border-radius: 15px;
+}
+/* The scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 @media (min-width: 960px) {
   .title {
     font: normal normal bold 40px ITC Avant Garde Gothic W02 Md;

@@ -12,6 +12,7 @@
                 hide-default-footer                
               >            
             </v-data-table> 
+            <div style="padding:20px; text-align: left; font-size: 0.9rem;">Since the sizeas are in <span style="color:#E87A0A">US MENS</span>. Please do the appropriate conversions to ensure the proper fit.</div>
           </v-card>
       </v-col>
           <v-col cols="8">
