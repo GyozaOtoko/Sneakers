@@ -96,7 +96,7 @@ onMounted(() => {
   border-radius: 30px; border: 1px solid #707070;
 }
 .mainShopImg {
-  padding: 100px 65px;
+  padding: 30px;
   max-width: 600px
 }
 .rightShopImg {
@@ -108,7 +108,7 @@ onMounted(() => {
   letter-spacing: -0.32px;
 }
 #helioCheckoutContainer {
-  width: 450px;
+  max-width: 450px;
 }
 #helioCheckoutContainer .hel-bg-white {
   background-color: rgb(33,33,33, 0) !important;
@@ -127,5 +127,14 @@ onMounted(() => {
 }
 .onImgHover:hover{
   transform: scale(1.2);
+}
+
+@media (min-width: 960px) {
+  #helioCheckoutContainer {
+    width: 450px;
+  }
+  .mainShopImg {
+    padding: 100px 65px;
+  }
 }
 </style>

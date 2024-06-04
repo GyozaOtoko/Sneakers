@@ -1,118 +1,116 @@
 <template>
   <div id="shoesizes" style="max-width: 1400px; margin-top: 200px" class="section">
-    <v-container>
-      <v-row>
-        <v-col cols="12" lg="4">
-          <v-card class="rounded-table" style="padding: 20px">
-            <v-data-table :headers="headers" :items="shoeSizes" :items-per-page="20" hide-default-footer>
-            </v-data-table>
-            <div style="padding:20px; text-align: left; font-size: 0.9rem;">Since the sizeas are in <span
-                style="color:#E87A0A">US MENS</span>. Please do the appropriate conversions to ensure the proper fit.
+    <v-row>
+      <v-col cols="12" lg="4">
+        <v-card class="rounded-table" style="padding: 20px">
+          <v-data-table :headers="headers" :items="shoeSizes" :items-per-page="20" hide-default-footer>
+          </v-data-table>
+          <div style="padding:20px; text-align: left; font-size: 0.9rem;">Since the sizeas are in <span
+              style="color:#E87A0A">US MENS</span>. Please do the appropriate conversions to ensure the proper fit.
+          </div>
+        </v-card>
+      </v-col>
+      <v-col cols="12" lg="8">
+        <div class="content-container">
+          <div class="info-text">
+            <p style="padding-bottom:5px; opacity:0.5">
+              Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining
+              high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
+            </p>
+            <div style="padding: 30px 0" class="desc">
+              <span>Here's how it works:</span>
             </div>
-          </v-card>
-        </v-col>
-        <v-col cols="12" lg="8">
-          <div class="content-container">
-            <div class="info-text">
-              <p style="padding-bottom:5px; opacity:0.5">
-                Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining
-                high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.
-              </p>
-              <div style="padding: 30px 0" class="desc">
-                <span>Here's how it works:</span>
-              </div>
-              <v-container class="justify-center d-flex"
-                style="text-align: center; min-height: 125px; margin-bottom: -75px;">
-                <v-row justify="center">
-                  <v-col cols="1"></v-col>
-                  <v-col cols="3" class="arrow1"></v-col>
-                  <v-col cols="3" class="arrow-squiggle"></v-col>
-                  <v-col cols="3" class="arrow2"></v-col>
-                  <v-col cols="1"></v-col>
-                </v-row>
-              </v-container>
-              <v-row>
-                <v-col>
-                  <v-sheet height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
-                    style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
-                    <v-container>
-                      <v-row no-gutters>
-                        <v-col md="3" align-self="center">
-                          <v-img src="@/assets/images/shopping-bag.png" width="40" height="40" class="mr-2" />
-                        </v-col>
-                        <v-col md="1" />
-                        <v-col md="8">
-                          <span>Place your order today</span>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)"
-                    rounded
-                    style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
-                    <v-container>
-                      <v-row no-gutters>
-                        <v-col md="3" align-self="center">
-                          <v-img src="@/assets/images/clock.png" width="40" height="40" class="mr-2" />
-                        </v-col>
-                        <v-col md="1" />
-                        <v-col md="8">
-                          <span>Wait for your shoes to arrive</span>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)"
-                    rounded
-                    style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
-                    <v-container>
-                      <v-row no-gutters>
-                        <v-col md="3" align-self="center">
-                          <v-img src="@/assets/images/scan.png" width="40" height="40" class="mr-2" />
-                        </v-col>
-                        <v-col md="1" />
-                        <v-col md="8">
-                          <span>Scan and enter the serial number</span>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                  </v-sheet>
-                </v-col>
-                <v-col>
-                  <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)"
-                    rounded
-                    style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
-                    <v-container>
-                      <v-row no-gutters>
-                        <v-col md="3" align-self="center">
-                          <v-img src="@/assets/images/nft.png" height="40" width="40" class="mr-2" />
-                        </v-col>
-                        <v-col md="1" />
-                        <v-col md="8">
-                          <span>Mint your one-of-a-kind digital artifact</span>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                  </v-sheet>
-                </v-col>
+            <v-container class="justify-center d-flex"
+              style="text-align: center; min-height: 125px; margin-bottom: -75px;">
+              <v-row justify="center">
+                <v-col cols="1"></v-col>
+                <v-col cols="3" class="arrow1"></v-col>
+                <v-col cols="3" class="arrow-squiggle"></v-col>
+                <v-col cols="3" class="arrow2"></v-col>
+                <v-col cols="1"></v-col>
               </v-row>
-            </div>
-            <v-row style="padding-top:25px;padding-bottom:20px;">
-              <div class="video-container">
-                <video width="100%" height="100%" controls>
-                  <source src="@/assets/videos/PromoVideo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+            </v-container>
+            <v-row>
+              <v-col>
+                <v-sheet height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
+                  style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
+                  <v-container>
+                    <v-row no-gutters>
+                      <v-col md="3" align-self="center">
+                        <v-img src="@/assets/images/shopping-bag.png" width="40" height="40" class="mr-2" />
+                      </v-col>
+                      <v-col md="1" />
+                      <v-col md="8">
+                        <span>Place your order today</span>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)"
+                  rounded
+                  style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
+                  <v-container>
+                    <v-row no-gutters>
+                      <v-col md="3" align-self="center">
+                        <v-img src="@/assets/images/clock.png" width="40" height="40" class="mr-2" />
+                      </v-col>
+                      <v-col md="1" />
+                      <v-col md="8">
+                        <span>Wait for your shoes to arrive</span>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)"
+                  rounded
+                  style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
+                  <v-container>
+                    <v-row no-gutters>
+                      <v-col md="3" align-self="center">
+                        <v-img src="@/assets/images/scan.png" width="40" height="40" class="mr-2" />
+                      </v-col>
+                      <v-col md="1" />
+                      <v-col md="8">
+                        <span>Scan and enter the serial number</span>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-sheet>
+              </v-col>
+              <v-col>
+                <v-sheet :elevation="1" height="30vh" color="linear-gradient(180deg, #262626 0%, #33333E 100%)"
+                  rounded
+                  style="border-radius: 30px; border: 1px solid #707070; height: 15vh; display: flex; align-items: center; justify-content: center;">
+                  <v-container>
+                    <v-row no-gutters>
+                      <v-col md="3" align-self="center">
+                        <v-img src="@/assets/images/nft.png" height="40" width="40" class="mr-2" />
+                      </v-col>
+                      <v-col md="1" />
+                      <v-col md="8">
+                        <span>Mint your one-of-a-kind digital artifact</span>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-sheet>
+              </v-col>
             </v-row>
           </div>
-        </v-col>
-      </v-row>
-    </v-container>
+          <v-row style="padding-top:25px;padding-bottom:20px;">
+            <div class="video-container">
+              <video width="100%" height="100%" controls>
+                <source src="@/assets/videos/PromoVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </v-row>
+        </div>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

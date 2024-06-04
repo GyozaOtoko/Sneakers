@@ -5,7 +5,7 @@
     <img style="position: absolute; right: 0" src="@/assets/images/1x3.svg">
     <img style="position: absolute; right: 0" src="@/assets/images/1x4.svg">
   </div>
-  <v-container class="fill-height justify-center" style="flex-direction: column;">
+  <v-container class="fill-height justify-center">
     <HeroSplash />
     <About />
     <Team />
@@ -30,6 +30,10 @@
 <style>
 @import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
+
+.v-application__wrap {
+  overflow-x: hidden;
+}
 
 .section {
   margin-top: 200px;
