@@ -1,10 +1,10 @@
 <template>
     <v-app-bar :elevation="0" color="rgba(0,0,0,0)">
     <template v-slot:prepend>
-      <v-app-bar-nav-icon class="hidden-sm hidden-xs" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="show-sm show-xs" @click="drawer = !drawer"></v-app-bar-nav-icon>
     </template>
     <!-- <v-app-bar-title>Application Bar</v-app-bar-title> -->
-    <v-toolbar-items class="hidden-xs-only">
+    <v-toolbar-items class="hidden-sm hidden-xs">
       <template v-for="(item) in menuItems" :key="i">
         <v-hover v-slot="{ isHovering, props }">
           <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
