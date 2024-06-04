@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar :elevation="0" color="rgba(0,0,0,0)">
+    <v-app-bar :elevation="0" color="rgba(0,0,0,0)" class="d-sm-none d-md-block">
     <template v-slot:prepend>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     </template>
