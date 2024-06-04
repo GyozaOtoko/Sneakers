@@ -1,5 +1,5 @@
 <template>
-  <v-container class="justify-center d-flex" style="margin-top: 150px; position: relative;">
+  <v-container class="justify-center d-flex section">
     <div id="shop" class="d-lg-flex">
       <div class="shop_left">
         <div>

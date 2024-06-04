@@ -32,7 +32,7 @@
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
 
 .section {
-  margin-top: 400px;
+  margin-top: 200px;
   position: relative;
 }
 
@@ -127,6 +127,9 @@
 }
 
 @media (min-width: 1280px) {
+  .section {
+    margin-top: 400px;
+  }
   .title {
     font: normal normal bold 50px/45px ITC Avant Garde Gothic W02 Md;
   }
