@@ -5,19 +5,19 @@
     <img style="position: absolute; right: 0" src="@/assets/images/1x3.svg">
     <img style="position: absolute; right: 0" src="@/assets/images/1x4.svg">
   </div>
-  <v-container class="fill-height justify-center">
+  <v-container class="fill-height justify-center" style="flex-direction: column;">
     <HeroSplash />
     <About />
     <Team />
     <!-- <ScrollDown /> -->
-    <v-container class="justify-center d-flex" style="margin-top: 150px; position: relative">
-      <div id="collections" style="max-width: 1400px; display: flex; flex-direction: column; align-items: center;">
+    <div id="collections" class="section" style="max-width: 1400px;">
+      <div style="display: flex;flex-direction: column;align-items: center;position: relative">
         <h2 class="title">Collections</h2>
-        <Collections collection="sneakers" />
+        <Collection collection="sneakers" />
         <div style="margin: 50px 0"></div>
-        <Collections collection="pioneers" />
+        <Collection collection="pioneers" />
       </div>
-    </v-container>
+    </div>
     <Shop />
     <ShoeSizes />
   </v-container>
@@ -30,6 +30,11 @@
 <style>
 @import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
+
+.section {
+  margin-top: 400px;
+  position: relative;
+}
 
 .title {
   font: normal normal bold 30px ITC Avant Garde Gothic W02 Md;
@@ -50,6 +55,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1 1 auto;
 }
 
 .card_title {
@@ -222,6 +228,4 @@
     'title search';
   gap: 10px;
 }
-
-;
 </style>

@@ -15,7 +15,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="deep-purple-lighten-2" text="Buy Now" block border></v-btn>
+      <v-btn block border class="collection-btn rounded-lg text-none" :href="`https://magiceden.io/ordinals/item-details/${props.collectionItem.id}`" target="_blank">Buy Now</v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -50,5 +50,13 @@ iframe {
   width: 100%;
   border-radius: 20px;
   padding: 15px
+}
+
+.collection-btn {
+  background: #E87A0A;
+}
+.collection-btn:hover {
+  background: transparent;
+  color: #E87A0A;
 }
 </style>

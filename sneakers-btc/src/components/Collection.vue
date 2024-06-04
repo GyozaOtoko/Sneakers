@@ -1,5 +1,5 @@
 <template>
-  <div class="stats" style="margin-top: 50px;display: grid;grid-template-columns: auto 1fr;gap: 10px;">
+  <div class="stats" style="margin-top: 50px;display: flex;width: 100%;justify-content: center;gap: 30px;flex-wrap: wrap;">
     <div id="info" class="coll-container">
       <div class="coll_title" v-html="collection.name"></div>
       <div class="coll_date">Created <b>{{ collection.created }}</b></div>
@@ -46,31 +46,31 @@
       </div>
       <div class="coll_search">search</div> -->
     </div>
-    <div style="display: grid;grid-template-columns: repeat(5, auto);gap: 10px;">
-      <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
+    <div style="gap: 10px;flex: 1 1 auto;display: flex;flex-wrap: wrap;">
+      <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
         <h3 class="card_title">{{ collection.supply }}</h3>
         <p class="card_subtitle">Supply</p>
       </v-sheet>
-      <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
+      <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
         <h3 class="card_title">{{ collection.size }} <span class="card_title-units">{{ collection.size_unit }}</span></h3>
         <p class="card_subtitle">Total file size</p>
       </v-sheet>
-      <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
+      <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
         <h3 class="card_title">{{ collection.fee }} <span class="card_title-units">BTC</span></h3>
         <p class="card_subtitle">Total creation fee</p>
       </v-sheet>
-      <!-- <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
+      <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
         <h3 class="card_title">{{ collection.satributes }}</h3>
         <p class="card_subtitle">Satributes</p>
       </v-sheet> -->
-      <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
+      <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
         <h3 class="card_title">{{ collection.range }}</h3>
         <p class="card_subtitle">Range</p>
       </v-sheet>
     </div>
   </div>
-  <v-sheet :elevation="1" color="black" rounded style="border-radius: 30px; border: 1px solid #707070; width: 100%; height: 650px; overflow: auto; margin-top: 30px">
-    <div style="display: grid; grid-auto-rows: auto; grid-template-columns: repeat(4, 1fr); gap:15px; margin: 30px">
+  <v-sheet color="black" rounded style="border-radius: 30px; border: 1px solid #707070; width: 100%; height: 650px; overflow: auto; margin-top: 30px">
+    <div class="collection-grid">
       <template v-for="(item) in collectionItems" :key="index">
         <CollectionCard :collectionItem=item :collectionName=props.collection />
       </template>
@@ -172,5 +172,17 @@ onMounted(() => {
   letter-spacing: -0.48px;
   color: #FFFFFF;
   opacity: 0.5
+}
+.collection-grid {
+  display: grid; 
+  grid-auto-rows: auto; 
+  gap:15px; 
+  margin: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 960px) {
+  .collection-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 </style>

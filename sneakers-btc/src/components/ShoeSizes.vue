@@ -1,5 +1,5 @@
 <template>
-  <div id="shoesizes" style="max-width: 1400px; position: relative; margin-top: 200px">
+  <div id="shoesizes" style="max-width: 1400px; margin-top: 200px" class="section">
     <v-container>
       <v-row>
         <v-col cols="12" lg="4">
@@ -104,7 +104,7 @@
             <v-row style="padding-top:25px;padding-bottom:20px;">
               <div class="video-container">
                 <video width="100%" height="100%" controls>
-                  <source src="@/assets/images/Sequence 02.mp4" type="video/mp4">
+                  <source src="@/assets/videos/PromoVideo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -128,7 +128,6 @@
   background-position: center;
   background-size: contain;
   height: 80%;
-  z-index: 1000;
 }
 
 .arrow2 {
@@ -136,7 +135,6 @@
   background-position: center;
   background-size: contain;
   height: 80%;
-  z-index: 1000;
 }
 
 .arrow-squiggle {
@@ -144,7 +142,6 @@
   background-position: center;
   background-size: contain;
   height: 100%;
-  z-index: 1000;
 }
 
 .info-text {
