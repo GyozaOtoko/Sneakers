@@ -1,7 +1,7 @@
 <template>
     <v-app-bar :elevation="0" color="rgba(0,0,0,0)">
     <template v-slot:prepend>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     </template>
     <!-- <v-app-bar-title>Application Bar</v-app-bar-title> -->
     <v-toolbar-items class="hidden-xs-only">
@@ -17,9 +17,24 @@
       <!-- <v-btn icon="mdi-dots-vertical"></v-btn> -->
     </template>
   </v-app-bar>
+
+     <!-- Navigation Drawer for Burger Menu -->
+     <v-navigation-drawer v-model="drawer" app temporary>
+      <v-list>
+        <v-list-item v-for="(item, i) in menuItems" :key="i" @click="drawer = false">
+          <v-list-item-content>
+            <v-list-item-title>
+              <v-btn flat v-bind:href="item.path">{{ item.title }}</v-btn>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
 </template>
 
 <script setup lang="ts">
+
+const drawer = ref(false);
   const menuItems = [
     { title: 'Home', path: '#home', icon: 'home' },
     { title: 'About', path: '#about', icon: 'face' },
