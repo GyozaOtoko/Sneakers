@@ -1,7 +1,7 @@
 <template>
-    <v-app-bar class="hidden-sm hidden-xs" :elevation="0" color="rgba(0,0,0,0)">
+    <v-app-bar :elevation="0" color="rgba(0,0,0,0)">
     <template v-slot:prepend>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="hidden-sm hidden-xs" @click="drawer = !drawer"></v-app-bar-nav-icon>
     </template>
     <!-- <v-app-bar-title>Application Bar</v-app-bar-title> -->
     <v-toolbar-items class="hidden-xs-only">
