@@ -8,6 +8,7 @@
   <v-container class="fill-height justify-center">
     <HeroSplash />
     <!-- <About /> -->
+    <Shop />
     <Team />
     <!-- <ScrollDown /> -->
     <!-- <div id="collections" class="section" style="max-width: 1400px;">
@@ -18,7 +19,6 @@
         <Collection collection="pioneers" />
       </div>
     </div> -->
-    <Shop />
     <!-- <ShoeSizes /> -->
   </v-container>
 </template>
@@ -31,12 +31,15 @@
 @import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
 
-.v-application__wrap {
+/* .v-application__wrap {
   overflow-x: hidden;
+} */
+.v-main {
+  overflow: hidden;
 }
 
 .section {
-  margin-top: 200px;
+  margin-top: 150px;
   position: relative;
 }
 

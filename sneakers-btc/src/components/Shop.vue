@@ -1,37 +1,35 @@
 <template>
-  <v-container class="justify-center d-flex section">
-    <div id="shop" class="d-lg-flex">
-      <div class="shop_left">
-        <div>
-          <div class="title">Bitcoin<br/>Sneakers x OTO</div>
-          <p class="shopText">Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality. These aren't just sneakers; they're a reflection of your unique personality.</p>
-        </div>
-        <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">
-          <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
-            <v-img src="@/assets/images/shopSneakers1.png" cover class="onImgHover"/>
-          </v-sheet>
-          <v-sheet style="grid-area: right1" class="shopImg rightShopImg">
-            <v-img src="@/assets/images/shopSneakers2.png" cover class="onImgHover"/>
-          </v-sheet>
-          <v-sheet style="grid-area: right2" class="shopImg rightShopImg">
-            <v-img src="@/assets/images/shopSneakers3.png" cover class="onImgHover"/>
-          </v-sheet>
-          <v-sheet style="grid-area: right3" class="shopImg rightShopImg">
-            <v-img src="@/assets/images/shopSneakers4.png" cover class="onImgHover"/>
-          </v-sheet>
-        </div>
+  <div id="shop" class="d-lg-flex justify-center section" style="z-index: 1">
+    <div class="shop_left">
+      <div>
+        <div class="title">Bitcoin<br/>Sneakers x OTO</div>
+        <p class="shopText">Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality. These aren't just sneakers; they're a reflection of your unique personality.</p>
       </div>
-      <div class="shop_right d-flex flex-column">
-        <div id="helioCheckoutContainer" ref="el"></div>
-        <v-btn border block class="reserve-btn collection-btn rounded-lg" style="margin-top: 20px" href="" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
-        <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
-          <p class="shopDisclaimer">
-            Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
-          </p>
-        </v-sheet> -->
+      <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">
+        <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
+          <v-img src="@/assets/images/shopSneakers1.png" cover class="onImgHover"/>
+        </v-sheet>
+        <v-sheet style="grid-area: right1" class="shopImg rightShopImg">
+          <v-img src="@/assets/images/shopSneakers2.png" cover class="onImgHover"/>
+        </v-sheet>
+        <v-sheet style="grid-area: right2" class="shopImg rightShopImg">
+          <v-img src="@/assets/images/shopSneakers3.png" cover class="onImgHover"/>
+        </v-sheet>
+        <v-sheet style="grid-area: right3" class="shopImg rightShopImg">
+          <v-img src="@/assets/images/shopSneakers4.png" cover class="onImgHover"/>
+        </v-sheet>
       </div>
     </div>
-  </v-container>
+    <div class="shop_right d-flex flex-column">
+      <div id="helioCheckoutContainer" ref="el"></div>
+      <v-btn border block class="collection-btn rounded-lg text-none" style="margin-top: 20px" href="" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
+      <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
+        <p class="shopDisclaimer">
+          Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
+        </p>
+      </v-sheet> -->
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts" scoped>
@@ -80,7 +78,7 @@ onMounted(() => {
   margin-bottom: 30px
 }
 .shop_right {
-  max-width: 450px
+  max-width: max-content;
 }
 .shopText {
   font: normal normal normal 16px/20px Helvetica Neue;
@@ -109,7 +107,7 @@ onMounted(() => {
   letter-spacing: -0.32px;
 }
 #helioCheckoutContainer {
-  max-width: 450px;
+  max-width: max-content;
 }
 #helioCheckoutContainer .hel-bg-white {
   background-color: rgb(33,33,33, 0) !important;
@@ -130,19 +128,22 @@ onMounted(() => {
   transform: scale(1.2);
 }
 .collection-btn {
-  background: #E87A0A;
+  background: #E87A0A !important;
 }
 .collection-btn:hover {
-  background: transparent;
+  background: transparent !important;
   color: #E87A0A;
 }
 
 @media (min-width: 960px) {
   #helioCheckoutContainer {
-    min-width: 450px;
+    min-width: 400px;
   }
   .mainShopImg {
     padding: 100px 65px;
+  }
+  .shop_right {
+    min-width: 400px
   }
 }
 </style>

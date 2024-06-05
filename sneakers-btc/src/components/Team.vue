@@ -1,7 +1,7 @@
 <template>
   <div id="team" style="max-width: 900px;" class="section">
     <div style="position: absolute;width: 100%;margin: -16px;">
-      <img style="position: absolute; left: 0; transform: rotate(90deg) translate(10vw, 50vw)" src="@/assets/images/arch.svg">
+      <img class="team-bg" src="@/assets/images/arch.svg">
     </div>
     <div style="text-align: center; position: relative">
       <v-row justify="center">
@@ -134,5 +134,14 @@
 
 .v-btn.team-link {
   text-transform: none;
+}
+
+.team-bg {
+  position: absolute; left: 0; transform: rotate(90deg) translate(10vw, 50%);
+}
+@media (min-width: 960px) {
+  .team-bg {
+    transform: rotate(90deg) translate(10vw, 50vw);
+  }
 }
 </style>
