@@ -87,7 +87,7 @@
               </v-row>
               <v-row justify="center">
                 <div style="padding-top: 10px; text-align: center;" class="about-text">
-                  <span>VINCEN</span>
+                  <span>VICEN</span>
                 </div>
               </v-row>
               <v-row justify="center">

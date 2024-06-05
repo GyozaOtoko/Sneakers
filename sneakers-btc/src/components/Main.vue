@@ -7,19 +7,19 @@
   </div>
   <v-container class="fill-height justify-center">
     <HeroSplash />
-    <About />
+    <!-- <About /> -->
     <Team />
     <!-- <ScrollDown /> -->
-    <div id="collections" class="section" style="max-width: 1400px;">
+    <!-- <div id="collections" class="section" style="max-width: 1400px;">
       <div style="display: flex;flex-direction: column;align-items: center;position: relative">
         <h2 class="title">Collections</h2>
         <Collection collection="sneakers" />
         <div style="margin: 50px 0"></div>
         <Collection collection="pioneers" />
       </div>
-    </div>
+    </div> -->
     <Shop />
-    <ShoeSizes />
+    <!-- <ShoeSizes /> -->
   </v-container>
 </template>
 
