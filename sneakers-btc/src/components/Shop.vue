@@ -23,11 +23,12 @@
       </div>
       <div class="shop_right d-flex flex-column">
         <div id="helioCheckoutContainer" ref="el"></div>
-        <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
+        <v-btn border block class="reserve-btn collection-btn rounded-lg" style="margin-top: 20px" href="" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
+        <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
           <p class="shopDisclaimer">
             Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
           </p>
-        </v-sheet>
+        </v-sheet> -->
       </div>
     </div>
   </v-container>
@@ -128,10 +129,17 @@ onMounted(() => {
 .onImgHover:hover{
   transform: scale(1.2);
 }
+.collection-btn {
+  background: #E87A0A;
+}
+.collection-btn:hover {
+  background: transparent;
+  color: #E87A0A;
+}
 
 @media (min-width: 960px) {
   #helioCheckoutContainer {
-    width: 450px;
+    min-width: 450px;
   }
   .mainShopImg {
     padding: 100px 65px;
