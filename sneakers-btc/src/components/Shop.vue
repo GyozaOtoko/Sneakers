@@ -9,15 +9,24 @@
         <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
           <v-img src="@/assets/images/shopSneakers1.webp" cover class="onImgHover"/>
         </v-sheet>
-        <v-sheet style="grid-area: right1" class="shopImg rightShopImg">
-          <v-img src="@/assets/images/shopSneakers2.webp" cover class="onImgHover"/>
-        </v-sheet>
-        <v-sheet style="grid-area: right2" class="shopImg rightShopImg">
-          <v-img src="@/assets/images/shopSneakers3.webp" cover class="onImgHover"/>
-        </v-sheet>
-        <v-sheet style="grid-area: right3" class="shopImg rightShopImg">
-          <v-img src="@/assets/images/shopSneakers4.webp" cover class="onImgHover"/>
-        </v-sheet>
+        <v-hover v-slot="{ isHovering, props }">
+          <v-sheet v-bind="props" style="grid-area: right1" class="shopImg rightShopImg">
+            <v-img src="@/assets/images/shopSneakers2.webp" cover class="onImgHover"/>
+            <v-overlay :model-value="!isHovering" class="align-center justify-center" scrim="#000000" contained></v-overlay>
+          </v-sheet>
+        </v-hover>
+        <v-hover v-slot="{ isHovering, props }">
+          <v-sheet v-bind="props" style="grid-area: right2" class="shopImg rightShopImg">
+            <v-img src="@/assets/images/shopSneakers3.webp" cover class="onImgHover"/>
+            <v-overlay :model-value="!isHovering" class="align-center justify-center" scrim="#000000" contained></v-overlay>
+          </v-sheet>
+        </v-hover>
+        <v-hover v-slot="{ isHovering, props }">
+          <v-sheet v-bind="props" style="grid-area: right3" class="shopImg rightShopImg">
+            <v-img src="@/assets/images/shopSneakers4.webp" cover class="onImgHover"/>
+            <v-overlay :model-value="!isHovering" class="align-center justify-center" scrim="#000000" contained></v-overlay>
+          </v-sheet>
+        </v-hover>
       </div>
     </div>
     <div class="shop_right d-flex flex-column">
@@ -97,6 +106,10 @@ onMounted(() => {
 }
 .v-sheet.shopImg {
   border-radius: 30px; border: 1px solid #707070;
+  position: relative
+}
+.v-overlay {
+  cursor: pointer;
 }
 .mainShopImg {
   padding: 30px;
