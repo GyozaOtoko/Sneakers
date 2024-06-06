@@ -46,7 +46,7 @@
       </div>
       <div class="coll_search">search</div> -->
     </div>
-    <div style="gap: 10px;flex: 1 1 auto;display: flex;flex-wrap: wrap;">
+    <div style="gap: 10px;flex: 1 1 auto;display: flex;flex-wrap: wrap; ">
       <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" class="card-box">
         <h3 class="card_title">{{ collection.supply }}</h3>
         <p class="card_subtitle">Supply</p>
@@ -69,7 +69,7 @@
       </v-sheet>
     </div>
   </div>
-  <v-sheet color="black" rounded style="border-radius: 30px; border: 1px solid #707070; width: 100%; height: 650px; overflow: auto; margin-top: 30px">
+  <v-sheet color="black" rounded class="collection-sheet">
     <div class="collection-grid">
       <template v-for="(item) in collectionItems" :key="index">
         <CollectionCard :collectionItem=item :collectionName=props.collection />
@@ -79,10 +79,10 @@
       <v-btn border class="collection-btn rounded-lg text-none" :href="`https://magiceden.io/ordinals/marketplace/{collection.slug}`" target="_blank">VIEW MORE</v-btn>
     </div>
   </v-sheet>
-  <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px; gap: 20px">
+  <!-- <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px; gap: 20px">
     <p>{{ collection.text[0] }}</p>
     <p>{{ collection.text[1] }}</p>
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">
@@ -179,6 +179,14 @@ const collectionItems = computed(() => {
   letter-spacing: -0.48px;
   color: #FFFFFF;
   opacity: 0.5
+}
+.collection-sheet {
+  border-radius: 30px; 
+  border: 1px solid #707070; 
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  margin-top: 30px
 }
 .collection-grid {
   display: grid; 
