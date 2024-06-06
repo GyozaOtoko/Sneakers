@@ -39,7 +39,7 @@ const drawer = ref(false);
     { title: 'Home', path: '#home'},
     // { title: 'About', path: '#about'},
     { title: 'Shop', path: '#shop'},
-    // { title: 'Collections', path: '#collections'},
+    { title: 'Collections', path: '#collections'},
     { title: 'Team', path: '#team'},
     { title: 'Claim', path: '#'},
   ];

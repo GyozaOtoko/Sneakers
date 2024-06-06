@@ -75,6 +75,9 @@
         <CollectionCard :collectionItem=item :collectionName=props.collection />
       </template>
     </div>
+    <div class="d-flex justify-center" style="margin-bottom: 30px">
+      <v-btn border class="collection-btn rounded-lg text-none" :href="`https://magiceden.io/ordinals/marketplace/{collection.slug}`" target="_blank">VIEW MORE</v-btn>
+    </div>
   </v-sheet>
   <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px; gap: 20px">
     <p>{{ collection.text[0] }}</p>
@@ -83,17 +86,20 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, computed } from 'vue';
+import { computed } from 'vue';
 import pioneersData from '@/assets/json/pioneersMetadata.json'
 import sneakersData from '@/assets/json/sneakersMetadata.json'
+import { useDisplay } from 'vuetify'
+
+const { smAndDown } = useDisplay()
 
 const props = defineProps(['collection'])
-console.log(props.collection)
 
 const collection = computed(() => {
   if (props.collection == 'pioneers'){
     return {
       name: 'Pioneers',
+      slug: 'pioneers',
       created: 'July, 2023',
       supply: 888,
       size: 114.711,
@@ -106,6 +112,7 @@ const collection = computed(() => {
   else if (props.collection == 'sneakers') {
     return {
       name: `Bitcoin <br/> sneakers`,
+      slug: 'bitcoin-sneakers',
       created: 'February, 2023',
       supply: 88,
       size: 3.186,
@@ -129,41 +136,41 @@ const collection = computed(() => {
 
 const collectionItems = computed(() => {
   if (props.collection == 'pioneers') {
-    return pioneersData;
+    return smAndDown.value ? pioneersData.slice(0,4) : pioneersData.slice(0,8)
   }
   else if (props.collection == 'sneakers') {
-    return sneakersData;
+    return smAndDown.value ? sneakersData.slice(0,4) : sneakersData.slice(0,8);
   }
 })
 
-let traitCategories: [{
-    traitType: string,
-    values: [string],
-    selectedValues: [string]
-}] | any = [];
+// let traitCategories: [{
+//     traitType: string,
+//     values: [string],
+//     selectedValues: [string]
+// }] | any = [];
 
-onMounted(() => {
-  //build traitCategories
-  pioneersData.forEach(item => {
-    item.meta.attributes.forEach((att: {trait_type: string, value: string}) => {
-      if(!traitCategories.find((item: any) => item.traitType == att.trait_type)) {
-        //initialize the traitCategories array
-        traitCategories.push({
-          traitType: att.trait_type, 
-          values: [att.value],
-          selectedValues: []
-        })
-      }
-      else {
-        let tempTraitItem = traitCategories.find((item: any) => item.traitType == att.trait_type);
-        if (!tempTraitItem.values.includes(att.value)) {
-          tempTraitItem.values.push(att.value);
-        }
-      }
-    })
-  })
-  console.log(JSON.stringify(traitCategories))
-})
+// onMounted(() => {
+//   //build traitCategories
+//   pioneersData.forEach(item => {
+//     item.meta.attributes.forEach((att: {trait_type: string, value: string}) => {
+//       if(!traitCategories.find((item: any) => item.traitType == att.trait_type)) {
+//         //initialize the traitCategories array
+//         traitCategories.push({
+//           traitType: att.trait_type, 
+//           values: [att.value],
+//           selectedValues: []
+//         })
+//       }
+//       else {
+//         let tempTraitItem = traitCategories.find((item: any) => item.traitType == att.trait_type);
+//         if (!tempTraitItem.values.includes(att.value)) {
+//           tempTraitItem.values.push(att.value);
+//         }
+//       }
+//     })
+//   })
+//   console.log(JSON.stringify(traitCategories))
+// })
 </script>
 
 <style>

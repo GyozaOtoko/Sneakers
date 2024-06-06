@@ -51,7 +51,7 @@ onMounted(() => {
   window.helioCheckout(
     helioCheckoutContainer,
     {
-      paylinkId: "65fcef08a0785d31a66bc63e",
+      paylinkId: "66611b6df244ef362bfc7394",
       platform: "magic_eden",
       theme: {
         themeMode: "dark", // or "light"

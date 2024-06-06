@@ -10,7 +10,7 @@
                 <div class="text-center text-md-left">
                   <div style="position: relative">
                     <span class="title" style="margin-bottom: 0">Bitcoin</span>
-                    <img class="squiggle-sm" src="@/assets/images/squiggle_sm2.png"/>
+                    <img class="squiggle-sm" src="@/assets/images/squiggle_sm2.svg"/>
                   </div>
                   <p class="title">Sneakers x OTO</p>
                 </div>

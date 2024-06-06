@@ -11,14 +11,14 @@
     <Shop />
     <Team />
     <!-- <ScrollDown /> -->
-    <!-- <div id="collections" class="section" style="max-width: 1400px;">
+    <div id="collections" class="section" style="max-width: 1400px;">
       <div style="display: flex;flex-direction: column;align-items: center;position: relative">
         <h2 class="title">Collections</h2>
         <Collection collection="sneakers" />
         <div style="margin: 50px 0"></div>
         <Collection collection="pioneers" />
       </div>
-    </div> -->
+    </div>
     <!-- <ShoeSizes /> -->
   </v-container>
 </template>
@@ -51,6 +51,7 @@
 
 .squiggle-sm {
   width: 100px;
+  margin-bottom: -30px;
 }
 
 .v-sheet.card-box {
@@ -114,6 +115,7 @@
 
   .squiggle-sm {
     width: auto;
+    margin-bottom: -50px;
   }
 
   .v-sheet.card-box {
@@ -194,11 +196,6 @@
   background: #000000 0% 0% no-repeat padding-box;
   opacity: 0.5;
   filter: blur(5px);
-}
-
-.squiggle_sm-bg {
-  position: absolute;
-  background-image: url('@/assets/images/squiggle_sm2.png');
 }
 
 .v-app-bar.v-toolbar {
