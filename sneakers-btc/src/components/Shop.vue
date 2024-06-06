@@ -21,13 +21,15 @@
       </div>
     </div>
     <div class="shop_right d-flex flex-column">
-      <div id="helioCheckoutContainer" ref="el"></div>
-      <v-btn border block class="collection-btn rounded-lg text-none" style="margin-top: 20px" href="" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
-      <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
-        <p class="shopDisclaimer">
-          Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
-        </p>
-      </v-sheet> -->
+      <div style="max-width: max-content;">
+        <div id="helioCheckoutContainer" ref="el"></div>
+        <v-btn border block class="collection-btn rounded-lg text-none" style="margin-top: 20px" href="" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
+        <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
+          <p class="shopDisclaimer">
+            Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
+          </p>
+        </v-sheet> -->
+      </div>
     </div>
   </div>
 </template>
@@ -71,14 +73,13 @@ onMounted(() => {
 
 <style>
 #shop {
-  max-width: 1400px; align-items: center; gap: 70px;
+  max-width: 1400px; 
+  align-items: center; 
+  gap: 30px;
 }
 .shop_left {
   max-width: 900px;
   margin-bottom: 30px
-}
-.shop_right {
-  max-width: max-content;
 }
 .shopText {
   font: normal normal normal 16px/20px Helvetica Neue;

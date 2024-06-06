@@ -5,7 +5,7 @@
     <img style="position: absolute; right: 0" src="@/assets/images/1x3.svg">
     <img style="position: absolute; right: 0" src="@/assets/images/1x4.svg">
   </div>
-  <v-container class="fill-height justify-center">
+  <v-container class="fill-height justify-center" style="flex-wrap: nowrap; flex-direction: column;">
     <HeroSplash />
     <!-- <About /> -->
     <Shop />

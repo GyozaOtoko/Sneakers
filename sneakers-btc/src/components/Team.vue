@@ -1,5 +1,5 @@
 <template>
-  <div id="team" style="max-width: 900px;" class="section">
+  <div id="team" style="max-width: 900px; margin-bottom: 100px" class="section">
     <div style="position: absolute;width: 100%;margin: -16px;">
       <img class="team-bg" src="@/assets/images/arch.svg">
     </div>
@@ -10,18 +10,11 @@
         </v-col>
       </v-row>
       <v-row class="justify-center" style="margin-top: 50px">
-        <v-col cols="6">
+        <v-col cols="12">
           <div class="text text-left">
             <span>Designed for those who crave both fashion and function, our sneakers are engineered with
               state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting
               the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
-          </div>
-        </v-col>
-        <v-col cols="6">
-          <div class="text text-left">
-            <span>Unleash your individuality with our diverse range of colorways and designs. From sleek
-              monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every
-              step. These aren't just sneakers; they're a reflection of your unique personality.</span>
           </div>
         </v-col>
       </v-row>
