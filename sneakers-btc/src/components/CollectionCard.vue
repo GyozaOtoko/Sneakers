@@ -14,9 +14,9 @@
       </v-row>
     </v-card-text>
 
-    <v-card-actions>
+    <!-- <v-card-actions>
       <v-btn block border class="collection-btn rounded-lg text-none" :href="`https://magiceden.io/ordinals/item-details/${props.collectionItem.id}`" target="_blank">Buy Now</v-btn>
-    </v-card-actions>
+    </v-card-actions> -->
   </v-card>
 </template>
 

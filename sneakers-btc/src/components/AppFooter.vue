@@ -76,4 +76,7 @@
 
     &:hover
       color: rgba(25, 118, 210, 1)
+
+  footer
+    position: fixed !important
 </style>

@@ -7,16 +7,16 @@
       </div>
       <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">
         <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
-          <v-img src="@/assets/images/shopSneakers1.png" cover class="onImgHover"/>
+          <v-img src="@/assets/images/shopSneakers1.webp" cover class="onImgHover"/>
         </v-sheet>
         <v-sheet style="grid-area: right1" class="shopImg rightShopImg">
-          <v-img src="@/assets/images/shopSneakers2.png" cover class="onImgHover"/>
+          <v-img src="@/assets/images/shopSneakers2.webp" cover class="onImgHover"/>
         </v-sheet>
         <v-sheet style="grid-area: right2" class="shopImg rightShopImg">
-          <v-img src="@/assets/images/shopSneakers3.png" cover class="onImgHover"/>
+          <v-img src="@/assets/images/shopSneakers3.webp" cover class="onImgHover"/>
         </v-sheet>
         <v-sheet style="grid-area: right3" class="shopImg rightShopImg">
-          <v-img src="@/assets/images/shopSneakers4.png" cover class="onImgHover"/>
+          <v-img src="@/assets/images/shopSneakers4.webp" cover class="onImgHover"/>
         </v-sheet>
       </div>
     </div>
@@ -80,6 +80,9 @@ onMounted(() => {
 .shop_left {
   max-width: 900px;
   margin-bottom: 30px
+}
+.shop_right {
+  align-items: center;
 }
 .shopText {
   font: normal normal normal 16px/20px Helvetica Neue;

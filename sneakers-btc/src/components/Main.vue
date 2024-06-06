@@ -9,8 +9,6 @@
     <HeroSplash />
     <!-- <About /> -->
     <Shop />
-    <Team />
-    <!-- <ScrollDown /> -->
     <div id="collections" class="section" style="max-width: 1400px;">
       <div style="display: flex;flex-direction: column;align-items: center;position: relative">
         <h2 class="title">Collections</h2>
@@ -19,6 +17,8 @@
         <Collection collection="pioneers" />
       </div>
     </div>
+    <Team />
+    <!-- <ScrollDown /> -->
     <!-- <ShoeSizes /> -->
   </v-container>
 </template>
@@ -35,7 +35,7 @@
   overflow-x: hidden;
 } */
 .v-main {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section {
@@ -44,7 +44,7 @@
 }
 
 .title {
-  font: normal normal bold 30px ITC Avant Garde Gothic W02 Md;
+  font: normal normal bolder 30px ITC Avant Garde Gothic W02 Md;
   letter-spacing: 2px;
   color: #FFFFFF;
 }
@@ -137,7 +137,7 @@
 
 @media (min-width: 1280px) {
   .section {
-    margin-top: 400px;
+    margin-top: 300px;
   }
   .title {
     font: normal normal bold 50px/45px ITC Avant Garde Gothic W02 Md;

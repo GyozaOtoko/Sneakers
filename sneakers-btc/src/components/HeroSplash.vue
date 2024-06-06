@@ -2,12 +2,12 @@
     <div id="home">
       <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded class="hero-sheet">
         <div class="hero-content">
-          <div class="align-center" style="display: flex">
+          <div style="display: flex">
             <v-col class="squiggly-bg d-none d-md-flex v-col-md-6">
             </v-col>
             <v-col class="v-col-md-6">
               <div>
-                <div class="text-center text-md-left">
+                <div>
                   <div style="position: relative">
                     <span class="title" style="margin-bottom: 0">Bitcoin</span>
                     <img class="squiggle-sm" src="@/assets/images/squiggle_sm2.svg"/>
@@ -25,8 +25,8 @@
                     <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
                   </div>
                   <div class="d-none d-md-block vr align-self-stretch"></div>
-                  <hr class="d-md-none my-5">
-                  <div class="text">
+                  <!-- <div class="my-5"></div> -->
+                  <div class="text mt-5 mt-md-0">
                     <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
                   </div>
                 </div>

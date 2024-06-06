@@ -1,5 +1,5 @@
 <template>
-  <div id="team" style="max-width: 900px; margin-bottom: 100px" class="section">
+  <div id="team" style="max-width: 900px" class="section">
     <div style="position: absolute;width: 100%;margin: -16px;">
       <img class="team-bg" src="@/assets/images/arch.svg">
     </div>
@@ -101,6 +101,9 @@
 </template>
 
 <style>
+#team {
+  margin-bottom: 100px;
+}
 .about-text {
   text-align: center;
   font: normal normal bold 20px/30px Helvetica Neue;
@@ -133,6 +136,9 @@
   position: absolute; left: 0; transform: rotate(90deg) translate(10vw, 50%);
 }
 @media (min-width: 960px) {
+  #team {
+    margin-bottom: 300px;
+  }
   .team-bg {
     transform: rotate(90deg) translate(10vw, 50vw);
   }
