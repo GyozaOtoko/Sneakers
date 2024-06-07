@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {useRoute} from "vue-router/auto"
-const route = useRoute("/claim")
+// import {useRoute} from "vue-router/auto"
+// const route = useRoute("/claim")
 </script>
 <template>
     <div class="w-100 h-100 d-flex justify-center align-center">
