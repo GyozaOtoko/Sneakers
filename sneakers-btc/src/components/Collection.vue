@@ -76,7 +76,7 @@
       </template>
     </div>
     <div class="d-flex justify-center" style="margin-bottom: 30px">
-      <v-btn border class="collection-btn rounded-lg text-none" :href="`https://magiceden.io/ordinals/marketplace/{collection.slug}`" target="_blank">VIEW MORE</v-btn>
+      <v-btn border class="collection-btn rounded-lg text-none" :href="`https://magiceden.io/ordinals/marketplace/${collection.slug}`" target="_blank">VIEW MORE</v-btn>
     </div>
   </v-sheet>
   <!-- <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 50px; gap: 20px">
