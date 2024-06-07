@@ -41,7 +41,7 @@ const drawer = ref(false);
     { title: 'Shop', path: '#shop'},
     { title: 'Collections', path: '#collections'},
     { title: 'Team', path: '#team'},
-    { title: 'Claim', path: '#'},
+    { title: 'Claim', path: '/claim'},
   ];
 </script>
 

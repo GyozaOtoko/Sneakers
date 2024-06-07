@@ -9,11 +9,13 @@ declare module 'vue' {
   export interface GlobalComponents {
     About: typeof import('./components/About.vue')['default']
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    Claim: typeof import('./components/Claim.vue')['default']
     Collection: typeof import('./components/Collection.vue')['default']
     CollectionCard: typeof import('./components/CollectionCard.vue')['default']
     HeaderMenu: typeof import('./components/HeaderMenu.vue')['default']
     HeroSplash: typeof import('./components/HeroSplash.vue')['default']
     Main: typeof import('./components/Main.vue')['default']
+    PageNotFound: typeof import('./components/PageNotFound.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ScrollDown: typeof import('./components/ScrollDown.vue')['default']
