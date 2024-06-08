@@ -38,7 +38,7 @@ const drawer = ref(false);
   const menuItems = [
     { title: 'Home', path: '#home'},
     // { title: 'About', path: '#about'},
-    { title: 'Shop', path: '#shop'},
+    { title: 'Sneakers', path: '#sneakers'},
     { title: 'Collections', path: '#collections'},
     { title: 'Team', path: '#team'},
     { title: 'Claim', path: '/claim'},

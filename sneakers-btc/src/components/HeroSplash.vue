@@ -8,11 +8,12 @@
             <v-col class="v-col-md-6">
               <div>
                 <div>
-                  <div style="position: relative">
+                  <!-- <div style="position: relative">
                     <span class="title" style="margin-bottom: 0">Bitcoin</span>
                     <img class="squiggle-sm" src="@/assets/images/squiggle_sm2.svg"/>
-                  </div>
-                  <p class="title">Sneakers x OTO</p>
+                  </div> -->
+                  <p class="title">Bitcoin Sneakers</p>
+                  <p style="font: normal normal normal 16px/17px ITC Avant Garde Gothic W02 Md; letter-spacing: -0.32px;">Luxury footwear for the crypto maxi</p>
                 </div>
                 <!-- <div style="padding: 30px 0" class="desc">
                   <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>
@@ -22,12 +23,7 @@
                 </div>
                 <div class="d-md-flex" style="margin-top:30px;">
                   <div class="text">
-                    <span>Designed for those who crave both fashion and function, our sneakers are engineered with state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
-                  </div>
-                  <div class="d-none d-md-block vr align-self-stretch"></div>
-                  <!-- <div class="my-5"></div> -->
-                  <div class="text mt-5 mt-md-0">
-                    <span>Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality.</span>
+                    <span>Step into the future with footwear that celebrates both your individuality and the revolutionary spirit of Bitcoin culture. Our luxury sneakers combine cutting-edge design with the power of blockchain technology, offering not just a unique statement but also exclusive digital assets. Discover the next evolution in footwear with Bitcoin Sneakers.</span>
                   </div>
                 </div>
               </div>

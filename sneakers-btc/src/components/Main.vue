@@ -206,34 +206,4 @@
 .menuHover * {
   color: #E87A0A;
 }
-
-.coll_title {
-  grid-area: title;
-  font: normal normal bold 30px/30px ITC Avant Garde Gothic W02 Md;
-  letter-spacing: 2px;
-  align-self: center
-}
-
-.coll_date {
-  grid-area: date;
-  font: normal normal normal 16px/17px Helvetica Neue;
-  letter-spacing: -0.32px;
-}
-
-.coll_filter {
-  grid-area: filter;
-}
-
-.coll_search {
-  grid-area: search;
-}
-
-.coll-container {
-  display: grid;
-  grid-template-areas:
-    'title date'
-    'title filter'
-    'title search';
-  gap: 10px;
-}
 </style>

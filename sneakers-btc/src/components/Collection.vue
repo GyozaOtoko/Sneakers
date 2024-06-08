@@ -195,6 +195,35 @@ const collectionItems = computed(() => {
   margin: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
+.coll_title {
+  grid-area: title;
+  font: normal normal bold 30px/30px ITC Avant Garde Gothic W02 Md;
+  letter-spacing: 2px;
+}
+
+.coll_date {
+  grid-area: date;
+  font: normal normal normal 16px/17px Helvetica Neue;
+  letter-spacing: -0.32px;
+  align-self: end
+}
+
+.coll_filter {
+  grid-area: filter;
+}
+
+.coll_search {
+  grid-area: search;
+}
+
+.coll-container {
+  display: grid;
+  grid-template-areas:
+    'search search'
+    'filter filter'
+    'title date';
+  gap: 10px;
+}
 @media (min-width: 960px) {
   .collection-grid {
     grid-template-columns: repeat(4, 1fr);
