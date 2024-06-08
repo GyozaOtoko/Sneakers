@@ -36,11 +36,11 @@
 
 const drawer = ref(false);
   const menuItems = [
-    { title: 'Home', path: '#home'},
+    { title: 'Home', path: '/#home'},
     // { title: 'About', path: '#about'},
-    { title: 'Sneakers', path: '#sneakers'},
-    { title: 'Collections', path: '#collections'},
-    { title: 'Team', path: '#team'},
+    { title: 'Sneakers', path: '/#sneakers'},
+    { title: 'Collections', path: '/#collections'},
+    { title: 'Team', path: '/#team'},
     { title: 'Claim', path: '/claim'},
   ];
 </script>

@@ -2,7 +2,7 @@
     <div id="home">
       <v-sheet :elevation="1" color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded class="hero-sheet">
         <div class="hero-content">
-          <div style="display: flex">
+          <div style="display: flex; align-items: center;">
             <v-col class="squiggly-bg d-none d-md-flex v-col-md-6">
             </v-col>
             <v-col class="v-col-md-6">
@@ -13,7 +13,7 @@
                     <img class="squiggle-sm" src="@/assets/images/squiggle_sm2.svg"/>
                   </div> -->
                   <p class="title">Bitcoin Sneakers</p>
-                  <p style="font: normal normal normal 16px/17px ITC Avant Garde Gothic W02 Md; letter-spacing: -0.32px;">Luxury footwear for the crypto maxi</p>
+                  <p class="subtitle">Luxury footwear for the crypto maxi</p>
                 </div>
                 <!-- <div style="padding: 30px 0" class="desc">
                   <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>
@@ -51,6 +51,11 @@
   display: flex; 
   margin: 20px;
 }
+.subtitle {
+  font: normal normal normal 16px/17px ITC Avant Garde Gothic W02 Md; 
+  letter-spacing: -0.32px;
+  margin-top: 5px;
+}
 @media (min-width: 690px) {
   .hero-content {
     display: flex; 
@@ -67,6 +72,12 @@
   }
   .hero-content {
     margin: 100px 50px;
+    height: 470px;
+  }
+  .subtitle {
+    font: normal normal normal 20px ITC Avant Garde Gothic W02 Md; 
+    letter-spacing: -0.32px;
+    margin-top: 5px;
   }
 }
 </style>
