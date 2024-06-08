@@ -34,15 +34,18 @@
 
 <script setup lang="ts">
 
+const route = useRoute()
+let redirectPath = route.name != '/' ? '/' : '';
+
 const drawer = ref(false);
-  const menuItems = [
-    { title: 'Home', path: '/#home'},
-    // { title: 'About', path: '#about'},
-    { title: 'Sneakers', path: '/#sneakers'},
-    { title: 'Collections', path: '/#collections'},
-    { title: 'Team', path: '/#team'},
-    { title: 'Claim', path: '/claim'},
-  ];
+const menuItems = [
+  { title: 'Home', path: `${redirectPath}#home`},
+  // { title: 'About', path: '#about'},
+  { title: 'Sneakers', path: `${redirectPath}#sneakers`},
+  { title: 'Collections', path: `${redirectPath}#collections`},
+  { title: 'Team', path: `${redirectPath}#team`},
+  { title: 'Claim', path: 'claim'},
+];
 </script>
 
 <style>

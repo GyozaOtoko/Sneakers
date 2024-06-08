@@ -3,7 +3,7 @@
 // const route = useRoute("/claim")
 </script>
 <template>
-    <div class="w-100 h-100 d-flex justify-center align-center">
+    <div class="w-100 h-100 d-flex justify-center align-center" style="position: relative">
         <h1 style="margin-bottom: 400px">Check back soon</h1>
         <!-- <p>{{ route.params.path }}</p> -->
     </div>

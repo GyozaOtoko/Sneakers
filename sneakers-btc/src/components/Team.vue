@@ -1,8 +1,8 @@
 <template>
   <div id="team" style="max-width: 900px" class="section">
-    <div style="position: absolute;width: 100%;margin: -16px;">
+    <!-- <div style="position: absolute;width: 100%;margin: -16px;">
       <img class="team-bg" src="@/assets/images/arch.svg">
-    </div>
+    </div> -->
     <div style="text-align: center; position: relative">
       <v-row justify="center">
         <v-col>
