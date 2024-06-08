@@ -36,15 +36,16 @@
 
 const route = useRoute()
 let redirectPath = route.name != '/' ? '/' : '';
+const url = window.location.origin
 
 const drawer = ref(false);
 const menuItems = [
-  { title: 'Home', path: `${redirectPath}#home`, id: 1},
+  { title: 'Home', path: `${url}${redirectPath}#home`, id: 1},
   // { title: 'About', path: '#about'},
-  { title: 'Sneakers', path: `${redirectPath}#sneakers`, id: 2},
-  { title: 'Collections', path: `${redirectPath}#collections`, id: 3},
-  { title: 'Team', path: `${redirectPath}#team`, id: 4},
-  { title: 'Claim', path: '/claim', id: 5},
+  { title: 'Sneakers', path: `${url}${redirectPath}#sneakers`, id: 2},
+  { title: 'Collections', path: `${url}${redirectPath}#collections`, id: 3},
+  { title: 'Team', path: `${url}${redirectPath}#team`, id: 4},
+  { title: 'Claim', path: `${url}/claim`, id: 5},
 ];
 </script>
 
