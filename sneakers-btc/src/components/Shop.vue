@@ -2,7 +2,7 @@
   <div id="shop" class="d-lg-flex justify-center section" style="z-index: 1">
     <div class="shop_left">
       <div>
-        <div class="title">Bitcoin<br/>Sneakers x OTO</div>
+        <div class="title">Sneakers<br/>Blue Genesis: Limited Edition</div>
         <p class="shopText">Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality. These aren't just sneakers; they're a reflection of your unique personality.</p>
       </div>
       <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">

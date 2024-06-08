@@ -45,6 +45,7 @@
   border-radius: 30px; 
   border: 1px solid #707070; 
   display: flex;
+  background-image: linear-gradient(#262626, #33333E);
 }
 .hero-content {
   display: flex; 

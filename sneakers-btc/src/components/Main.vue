@@ -55,6 +55,10 @@
   margin-bottom: -30px;
 }
 
+.v-sheet {
+  background-image: linear-gradient(#262626, #33333E);
+}
+
 .v-sheet.card-box {
   border-radius: 20px;
   border: 1px solid #707070;
