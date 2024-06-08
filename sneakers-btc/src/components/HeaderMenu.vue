@@ -5,7 +5,7 @@
     </template>
     <!-- <v-app-bar-title>Application Bar</v-app-bar-title> -->
     <v-toolbar-items class="hidden-sm hidden-xs">
-      <template v-for="(item) in menuItems" :key="i">
+      <template v-for="(item) in menuItems" :key="item.id">
         <v-hover v-slot="{ isHovering, props }">
           <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
         </v-hover>
@@ -21,7 +21,7 @@
      <!-- Navigation Drawer for Burger Menu -->
      <v-navigation-drawer v-model="drawer" app temporary>
       <v-list>
-        <v-list-item v-for="(item, i) in menuItems" :key="i" @click="drawer = false">
+        <v-list-item v-for="(item) in menuItems" :key="item.id" @click="drawer = false">
           <v-list-item-content>
             <v-list-item-title>
               <v-btn flat v-bind:href="item.path">{{ item.title }}</v-btn>
@@ -39,12 +39,12 @@ let redirectPath = route.name != '/' ? '/' : '';
 
 const drawer = ref(false);
 const menuItems = [
-  { title: 'Home', path: `${redirectPath}#home`},
+  { title: 'Home', path: `${redirectPath}#home`, id: 1},
   // { title: 'About', path: '#about'},
-  { title: 'Sneakers', path: `${redirectPath}#sneakers`},
-  { title: 'Collections', path: `${redirectPath}#collections`},
-  { title: 'Team', path: `${redirectPath}#team`},
-  { title: 'Claim', path: 'claim'},
+  { title: 'Sneakers', path: `${redirectPath}#sneakers`, id: 2},
+  { title: 'Collections', path: `${redirectPath}#collections`, id: 3},
+  { title: 'Team', path: `${redirectPath}#team`, id: 4},
+  { title: 'Claim', path: '/claim', id: 5},
 ];
 </script>
 

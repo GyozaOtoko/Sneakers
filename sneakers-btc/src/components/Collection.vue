@@ -109,7 +109,7 @@ const collection = computed(() => {
       size_unit: 'Kb',
       fee: 0.0232,
       range: '20,168,976 - 24,736,954',
-      text: [`Introducing "Pioneers", an extraordinary NFT collection that breathes life into the digital frontier through a vibrant ensemble of 2D cartoon-style characters. These captivating individuals stand as the embodiment of collaboration, creativity, and innovation, uniting their diverse talents and skills in a quest for progress and excellence.`,`In the whimsical world of "Pioneers", each character is a unique manifestation of creativity and resilience, echoing the spirit of those who dare to forge new paths. With their animated expressions and distinctive personalities, these pioneers are not just characters but storytellers, inviting you to join them on an exhilarating journey of discovery.`]
+      text: [`Our pioneers are the driving force behind Bitcoin Sneakers. By owning one of our avatars, you're not just getting a piece of digital art; you're becoming part of a community with access to exclusive benefits and rewards.`]
     }
   }
   else if (props.collection == 'sneakers') {
@@ -133,7 +133,7 @@ const collection = computed(() => {
     size_unit: '',
     fee: 0,
     range: '',
-    text: [`Our pioneers are the driving force behind Bitcoin Sneakers. By owning one of our avatars, you’re not just getting a piece of digital art; you’re becoming part of a community with access to exclusive benefits and rewards. `]
+    text: []
   }
 });
 
