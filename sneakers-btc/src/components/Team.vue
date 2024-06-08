@@ -9,17 +9,8 @@
           <h2 class="title">Team</h2>
         </v-col>
       </v-row>
-      <v-row class="justify-center" style="margin-top: 50px">
-        <v-col cols="12">
-          <div class="text text-left">
-            <span>Designed for those who crave both fashion and function, our sneakers are engineered with
-              state-of-the-art materials to provide unparalleled support and durability. Whether you're hitting
-              the streets or chasing your fitness goals, these kicks are your ultimate companion.</span>
-          </div>
-        </v-col>
-      </v-row>
       <v-row class="justify-center" style="margin-top: 50px;text-align: center;">
-        <v-col cols="12" sm="4" class="team-card">
+        <v-col cols="8" sm="4" class="team-card">
           <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
             style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
             <v-container>
@@ -44,7 +35,7 @@
             </v-container>
           </v-sheet>
         </v-col>
-        <v-col cols="12" sm="4" class="team-card">
+        <v-col cols="8" sm="4" class="team-card">
           <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
             style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
             <v-container>
@@ -69,7 +60,7 @@
             </v-container>
           </v-sheet>
         </v-col>
-        <v-col cols="12" sm="4" class="team-card">
+        <v-col cols="8" sm="4" class="team-card">
           <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
             style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
             <v-container>
@@ -103,6 +94,8 @@
 <style>
 #team {
   margin-bottom: 100px;
+  width: 100%;
+  max-width: 900px;
 }
 .about-text {
   text-align: center;
@@ -137,7 +130,7 @@
 }
 @media (min-width: 960px) {
   #team {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
   .team-bg {
     transform: rotate(90deg) translate(10vw, 50vw);
