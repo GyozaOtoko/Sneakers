@@ -7,7 +7,7 @@
     <v-toolbar-items class="hidden-sm hidden-xs">
       <template v-for="(item) in menuItems" :key="item.id">
         <v-hover v-slot="{ isHovering, props }">
-          <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props">{{ item.title }}</v-btn>
+          <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props"  @click="if(item.id < 5 ){router.push(item.path);}">{{ item.title }}</v-btn>
         </v-hover>
       </template>
     </v-toolbar-items>
@@ -24,7 +24,7 @@
         <v-list-item v-for="(item) in menuItems" :key="item.id" @click="drawer = false">
           <v-list-item-content>
             <v-list-item-title>
-              <v-btn flat v-bind:href="item.path">{{ item.title }}</v-btn>
+              <v-btn flat v-bind:href="item.path" @click="if(item.id < 5 ){router.push(item.path);}">{{ item.title }}</v-btn>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-
+const router = useRouter();
 const route = useRoute()
 let redirectPath = route.name != '/' ? '/' : '';
 const url = window.location.origin
