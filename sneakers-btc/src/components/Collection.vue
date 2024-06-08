@@ -69,6 +69,9 @@
       </v-sheet>
     </div>
   </div>
+  <div class="w-100 d-flex justify-space-between collection_text" style="margin-top: 30px">
+    <p>{{ collection.text[0] }}</p>
+  </div>
   <v-sheet color="black" rounded class="collection-sheet">
     <div class="collection-grid">
       <template v-for="(item) in collectionItems" :key="index">
@@ -111,7 +114,7 @@ const collection = computed(() => {
   }
   else if (props.collection == 'sneakers') {
     return {
-      name: `Bitcoin <br/> sneakers`,
+      name: `Bitcoin <br/> Sneakers`,
       slug: 'bitcoin-sneakers',
       created: 'February, 2023',
       supply: 88,
@@ -119,7 +122,7 @@ const collection = computed(() => {
       size_unit: 'MB',
       fee: 0.0382,
       range: '44,703 - 406,646',
-      text: [`"Bitcoin Sneakers" is a groundbreaking NFT collection that seamlessly fuses the worlds of cryptocurrency and fashion, offering enthusiasts a unique and stylish way to express their passion for both. This digital art collection features a series of meticulously designed PNGs showcasing an exclusive lineup of sneakers, each intricately crafted with a nod to the iconic Bitcoin symbol.`, `Immerse yourself in the world of digital couture as "Bitcoin Sneakers" brings together the decentralized beauty of blockchain technology and the timeless appeal of high-end footwear. Each PNG file within the collection captures the essence of luxury sneakers, meticulously detailed with a distinctive Bitcoin twist, creating a visual symphony of style and symbolism.`]
+      text: [`Our journey began on February 9, 2023, when we inscribed 88 sneakers onto the Bitcoin blockchain, also known as Ordinals. We became the first fashion collection inscribed on Bitcoin. Check out the sneakers below and own your piece of Bitcoin history.`]
     }
   }
   else return {
@@ -130,7 +133,7 @@ const collection = computed(() => {
     size_unit: '',
     fee: 0,
     range: '',
-    text: []
+    text: [`Our pioneers are the driving force behind Bitcoin Sneakers. By owning one of our avatars, you’re not just getting a piece of digital art; you’re becoming part of a community with access to exclusive benefits and rewards. `]
   }
 });
 
@@ -223,6 +226,7 @@ const collectionItems = computed(() => {
     'filter filter'
     'title date';
   gap: 10px;
+  align-items: end;
 }
 @media (min-width: 960px) {
   .collection-grid {

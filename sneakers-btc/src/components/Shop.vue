@@ -1,9 +1,9 @@
 <template>
-  <div id="shop" class="d-lg-flex justify-center section" style="z-index: 1">
+  <div id="sneakers" class="d-lg-flex justify-center section" style="z-index: 1">
     <div class="shop_left">
       <div>
         <div class="title">Sneakers<br/>Blue Genesis: Limited Edition</div>
-        <p class="shopText">Unleash your individuality with our diverse range of colorways and designs. From sleek monochromes to vibrant patterns, the FutureStride Collection ensures you make a statement with every step. These aren't just sneakers; they're a reflection of your unique personality. These aren't just sneakers; they're a reflection of your unique personality.</p>
+        <p class="shopText">Introducing our first drop: the Blue Genesis, a limited edition release of just 1500 pairs (250 remaining). Inspired by the origins of Bitcoin and the dawn of digital currency. Each pair comes with a generative art piece by the renowned artist OTO hyperlink to x.com/otograf_jp (as featured in Sotheby’s). Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</p>
       </div>
       <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">
         <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
@@ -32,7 +32,7 @@
     <div class="shop_right d-flex flex-column">
       <div style="max-width: max-content;">
         <div id="helioCheckoutContainer" ref="el"></div>
-        <v-btn border block class="collection-btn rounded-lg text-none" style="margin-top: 20px" href="" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
+        <v-btn border block class="collection-btn rounded-lg text-none" style="margin-top: 20px" href="https://forms.gle/McmW4PKoPWT9xX7E7" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
         <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
           <p class="shopDisclaimer">
             Disclaimer: This is a DeFi payment that can't be reversed. Funds go directly to the merchant.
@@ -92,6 +92,8 @@ onMounted(() => {
 }
 .shop_right {
   align-items: center;
+  align-self: end;
+  margin-bottom: 30px
 }
 .shopText {
   font: normal normal normal 16px/20px Helvetica Neue;

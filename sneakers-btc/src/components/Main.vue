@@ -11,7 +11,7 @@
     <Shop />
     <div id="collections" class="section" style="max-width: 1400px;">
       <div style="display: flex;flex-direction: column;align-items: center;position: relative; z-index: 1">
-        <h2 class="title">Collections</h2>
+        <h2 class="title">Digital Collections</h2>
         <Collection collection="sneakers" />
         <div style="margin: 50px 0"></div>
         <Collection collection="pioneers" />
