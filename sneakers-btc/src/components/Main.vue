@@ -84,6 +84,11 @@
 }
 
 
+/* The scrollbar track (background) */
+#collections ::-webkit-scrollbar-track {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 ::-webkit-scrollbar {  
   width: 12px; /* Width of the vertical scrollbar */
   height: 12px; /* Height of the horizontal scrollbar */
@@ -91,11 +96,6 @@
 ::-webkit-scrollbar-track {
   background: #151617; 
   border-radius: 10px;
-}
-/* The scrollbar track (background) */
-#collections ::-webkit-scrollbar-track {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 /* The scrollbar thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
