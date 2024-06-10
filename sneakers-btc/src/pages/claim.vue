@@ -3,13 +3,11 @@
 // const route = useRoute("/claim")
 </script>
 <template>
-    <v-container style="max-height: 800px">
+    <v-container>
         <v-row>
             <v-col>
-                <div class="text-center" style="position: relative; text-align: center;">
-                    <div style="display: flex;justify-content: center; max-height: 900px;">
-                        <iframe src="https://ordinalsbot.com/bitcoin-sneakers" style="aspect-ratio: 1 / 1; border: none; flex: 1 1 75%; max-width: 900px;"></iframe>
-                    </div>
+                <div style="display: flex;justify-content: center; max-height: 900px;position: relative; text-align: center; margin: 50px 0">
+                    <iframe src="https://ordinalsbot.com/bitcoin-sneakers" style="aspect-ratio: 1 / 1; border: none; flex: 1 1 auto; max-width: 900px; max-height: 800px;"></iframe>
                 </div>
             </v-col>
         </v-row>
