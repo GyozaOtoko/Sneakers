@@ -15,3 +15,9 @@
         </v-row>
     </v-container>
 </template>
+
+<style>
+.v-application__wrap {
+    overflow: hidden
+}
+</style>
