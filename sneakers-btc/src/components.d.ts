@@ -15,7 +15,6 @@ declare module 'vue' {
     HeaderMenu: typeof import('./components/HeaderMenu.vue')['default']
     HeroSplash: typeof import('./components/HeroSplash.vue')['default']
     Main: typeof import('./components/Main.vue')['default']
-    PageNotFound: typeof import('./components/PageNotFound.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ScrollDown: typeof import('./components/ScrollDown.vue')['default']
