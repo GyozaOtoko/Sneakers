@@ -1,5 +1,5 @@
 <template>
-  <div class="stats" style="margin-top: 50px;display: flex;width: 100%;justify-content: center;gap: 30px;flex-wrap: wrap;">
+  <div class="stats" style="margin-top: 50px;display: flex;width: 100%;gap: 30px;flex-wrap: wrap;">
     <div id="info" class="coll-container">
       <div class="coll_title" v-html="collection.name"></div>
       <div class="coll_date">Created <b>{{ collection.created }}</b></div>
@@ -202,13 +202,14 @@ const collectionItems = computed(() => {
   grid-area: title;
   font: normal normal bold 30px/30px ITC Avant Garde Gothic W02 Md;
   letter-spacing: 2px;
+  color: #E87A0A;
 }
-
 .coll_date {
   grid-area: date;
   font: normal normal normal 16px/17px Helvetica Neue;
   letter-spacing: -0.32px;
-  align-self: end
+  align-self: end;
+  text-align: right;
 }
 
 .coll_filter {
@@ -227,10 +228,17 @@ const collectionItems = computed(() => {
     'title date';
   gap: 10px;
   align-items: end;
+  flex: 1 1 auto;
 }
 @media (min-width: 960px) {
   .collection-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .coll-container {
+    flex: unset;
+  }
+  .coll_date {
+    text-align: unset;
   }
 }
 </style>

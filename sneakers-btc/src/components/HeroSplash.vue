@@ -13,7 +13,7 @@
                     <img class="squiggle-sm" src="@/assets/images/squiggle_sm2.svg"/>
                   </div> -->
                   <p class="title">Bitcoin Sneakers</p>
-                  <p class="subtitle">Luxury footwear for the crypto maxi</p>
+                  <p class="subtitle">Luxury footwear for crypto enthusiasts</p>
                 </div>
                 <!-- <div style="padding: 30px 0" class="desc">
                   <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>

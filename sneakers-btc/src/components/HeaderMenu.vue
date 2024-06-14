@@ -24,7 +24,7 @@
         <v-list-item v-for="(item) in menuItems" :key="item.id" @click="drawer = false">
           <v-list-item-content>
             <v-list-item-title>
-              <v-btn flat v-bind:href="item.path" @click="if(item.id < 5 ){router.push(item.path);}">{{ item.title }}</v-btn>
+              <v-btn block class="justify-start" v-bind:href="item.path" @click="if(item.id < 5 ){router.push(item.path);}">{{ item.title }}</v-btn>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>

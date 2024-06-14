@@ -28,7 +28,7 @@
                 <span>Founder</span>
               </v-row>
               <v-row justify="center">
-                <a href="www.x.com/daytripperNFT" class="team-link">
+                <a href="https://www.x.com/daytripperNFT" class="team-link" target="_blank">
                   x.com/daytripperNFT
                 </a>
               </v-row>
@@ -53,7 +53,7 @@
                 <span>Dev</span>
               </v-row>
               <v-row justify="center">
-                <a href="https://x.com/GyozaOtoko4596" class="team-link">
+                <a href="https://x.com/GyozaOtoko4596" class="team-link" target="_blank">
                   x.com/GyozaOtoko4596
                 </a>
               </v-row>
@@ -78,7 +78,7 @@
                 <span>Artist</span>
               </v-row>
               <v-row justify="center">
-                <a href="https://x.com/Vicendraws" class="team-link">
+                <a href="https://x.com/Vicendraws" class="team-link" target="_blank">
                   x.com/Vicendraws
                 </a>
               </v-row>
