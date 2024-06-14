@@ -103,7 +103,7 @@ const collection = computed(() => {
     return {
       name: 'Pioneers',
       slug: 'pioneers',
-      created: 'July, 2023',
+      created: 'July 2023',
       supply: 888,
       size: 114.711,
       size_unit: 'Kb',
@@ -116,7 +116,7 @@ const collection = computed(() => {
     return {
       name: `Bitcoin <br/> Sneakers`,
       slug: 'bitcoin-sneakers',
-      created: 'February, 2023',
+      created: 'February 2023',
       supply: 88,
       size: 3.186,
       size_unit: 'MB',
