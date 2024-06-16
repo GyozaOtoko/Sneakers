@@ -18,12 +18,14 @@
 </template>
 
 <script setup lang="ts">
+import '../assets/fonts.css'; 
 //  
 </script>
 
 <style>
-@import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
+
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
+@import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
 
 .v-application__wrap {
   overflow: hidden;
@@ -39,6 +41,10 @@
 }
 
 .title {
+  font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
+}
+
+.title_old {
   font: normal normal bolder 30px ITC Avant Garde Gothic W02 Md;
   letter-spacing: 2px;
   color: #FFFFFF;

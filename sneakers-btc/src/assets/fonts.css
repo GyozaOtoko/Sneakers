@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'ITCAvantGardeGothicLTBold';
+    src: url('@/assets/fonts/ITCAvantGarde/ITCAvantGardeGothicLTBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
+}
