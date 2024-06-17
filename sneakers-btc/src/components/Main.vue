@@ -22,11 +22,12 @@
 </template>
 
 <script setup lang="ts">
+import '../assets/fonts.css'; 
 //  
 </script>
 
 <style>
-@import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
+
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
 
 .v-application__wrap {
@@ -43,9 +44,9 @@
 }
 
 .title {
-  font: normal normal bolder 30px ITC Avant Garde Gothic W02 Md;
-  letter-spacing: 2px;
+  font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
   color: #FFFFFF;
+  font-size: 30px;
 }
 
 .squiggle-sm {
@@ -96,7 +97,7 @@
 
 @media (min-width: 960px) {
   .title {
-    font: normal normal bold 40px ITC Avant Garde Gothic W02 Md;
+    font-size: 40px;
   }
 
   .squiggle-sm {
@@ -126,7 +127,7 @@
     margin-top: 300px;
   }
   .title {
-    font: normal normal bold 50px/45px ITC Avant Garde Gothic W02 Md;
+    font-size: 50px;
   }
 
   .v-sheet.card-box {
@@ -156,6 +157,7 @@
 
 .text {
   font: normal normal normal 16px/17px Helvetica Neue;
+  /* font: 'Swansea'; */
   letter-spacing: -0.32px;
   color: #FFFFFF;
   opacity: 0.5;

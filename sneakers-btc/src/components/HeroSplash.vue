@@ -52,8 +52,8 @@
   margin: 20px;
 }
 .subtitle {
-  font: normal normal normal 16px/17px ITC Avant Garde Gothic W02 Md; 
-  letter-spacing: -0.32px;
+  font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
+  font-size: 16px;
   margin-top: 5px;
 }
 @media (min-width: 690px) {
@@ -75,9 +75,8 @@
     height: 470px;
   }
   .subtitle {
-    font: normal normal normal 20px ITC Avant Garde Gothic W02 Md; 
-    letter-spacing: -0.32px;
-    margin-top: 5px;
+    font-family: 'ITCAvantGardeGothicLTBold', sans-serif;;
+    font-size: 20px;
   }
 }
 </style>
