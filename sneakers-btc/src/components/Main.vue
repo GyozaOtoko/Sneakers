@@ -153,6 +153,7 @@ import '../assets/fonts.css';
 
 .text {
   font: normal normal normal 16px/17px Helvetica Neue;
+  /* font: 'Swansea'; */
   letter-spacing: -0.32px;
   color: #FFFFFF;
   opacity: 0.5;

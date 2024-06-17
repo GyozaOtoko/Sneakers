@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Swansea';
+    src: url('@/assets/fonts/Swansea/Swansea.ttf') format('truetype');
+    font-style: normal;
+}
+
 .custom-font {
     font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
 }
