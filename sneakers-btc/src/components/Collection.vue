@@ -200,8 +200,8 @@ const collectionItems = computed(() => {
 }
 .coll_title {
   grid-area: title;
-  font: normal normal bold 30px/30px ITC Avant Garde Gothic W02 Md;
-  letter-spacing: 2px;
+  font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
+  font-size: 30px;
   color: #E87A0A;
 }
 .coll_date {

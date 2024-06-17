@@ -25,7 +25,6 @@ import '../assets/fonts.css';
 <style>
 
 @import url(https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15999);
-@import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
 
 .v-application__wrap {
   overflow: hidden;
@@ -42,12 +41,8 @@ import '../assets/fonts.css';
 
 .title {
   font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
-}
-
-.title_old {
-  font: normal normal bolder 30px ITC Avant Garde Gothic W02 Md;
-  letter-spacing: 2px;
   color: #FFFFFF;
+  font-size: 30px;
 }
 
 .squiggle-sm {
@@ -98,7 +93,7 @@ import '../assets/fonts.css';
 
 @media (min-width: 960px) {
   .title {
-    font: normal normal bold 40px ITC Avant Garde Gothic W02 Md;
+    font-size: 40px;
   }
 
   .squiggle-sm {
@@ -128,7 +123,7 @@ import '../assets/fonts.css';
     margin-top: 300px;
   }
   .title {
-    font: normal normal bold 50px/45px ITC Avant Garde Gothic W02 Md;
+    font-size: 50px;
   }
 
   .v-sheet.card-box {
