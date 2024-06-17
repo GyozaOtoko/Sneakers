@@ -3,7 +3,7 @@
     <div :options="{'threshold':0.5}" transition="fade-transition" class="shop_left">
       <div>
         <div class="title">Blue Genesis: Limited Edition</div>
-        <p class="shopText">Introducing our first drop: the Blue Genesis, a limited edition release of just 1500 pairs (250 remaining). Inspired by the origins of Bitcoin and the dawn of digital currency. Each pair comes with a generative art piece by the renowned artist OTO hyperlink to <a href="https://x.com/otograf_jp" target="_blank">x.com/otograf_jp</a> (as featured in Sotheby's). Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</p>
+        <p class="shopText">Introducing our first drop: the Blue Genesis, a limited edition release of just 1500 pairs (250 remaining). Inspired by the origins of Bitcoin and the dawn of digital currency. Each pair comes with a generative art piece by the renowned artist <a href="https://x.com/otograf_jp" target="_blank">OTO</a> (as featured in Sotheby's). Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</p>
       </div>
       <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">
         <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
