@@ -1,97 +1,99 @@
 <template>
-  <div id="team" style="max-width: 900px" class="section">
-    <!-- <div style="position: absolute;width: 100%;margin: -16px;">
-      <img class="team-bg" src="@/assets/images/arch.svg">
-    </div> -->
-    <div style="text-align: center; position: relative">
-      <v-row justify="center">
-        <v-col>
-          <h2 class="title">Team</h2>
-        </v-col>
-      </v-row>
-      <v-row class="justify-center" style="margin-top: 50px;text-align: center;">
-        <v-col cols="8" sm="4" class="team-card">
-          <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
-            style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
-            <v-container>
-              <v-row>
-                <v-col align-self="center">
-                  <v-img src="@/assets/images/DayTripper.png" width="100%" />
-                </v-col>
-              </v-row>
-              <v-row justify="center">
-                <div style="padding-top: 10px; text-align: center;" class="about-text">
-                  <span>DAYTRIPPER</span>
-                </div>
-              </v-row>
-              <v-row justify="center">
-                <span>Founder</span>
-              </v-row>
-              <v-row justify="center">
-                <a href="https://www.x.com/daytripperNFT" class="team-link" target="_blank">
-                  x.com/daytripperNFT
-                </a>
-              </v-row>
-            </v-container>
-          </v-sheet>
-        </v-col>
-        <v-col cols="8" sm="4" class="team-card">
-          <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
-            style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
-            <v-container>
-              <v-row>
-                <v-col align-self="center">
-                  <v-img src="@/assets/images/Gyoza.png" width="100%" />
-                </v-col>
-              </v-row>
-              <v-row justify="center">
-                <div style="padding-top: 10px; text-align: center;" class="about-text">
-                  <span>GYOZA</span>
-                </div>
-              </v-row>
-              <v-row justify="center">
-                <span>Dev</span>
-              </v-row>
-              <v-row justify="center">
-                <a href="https://x.com/GyozaOtoko4596" class="team-link" target="_blank">
-                  x.com/GyozaOtoko4596
-                </a>
-              </v-row>
-            </v-container>
-          </v-sheet>
-        </v-col>
-        <v-col cols="8" sm="4" class="team-card">
-          <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
-            style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
-            <v-container>
-              <v-row>
-                <v-col align-self="center">
-                  <v-img src="@/assets/images/Vincen.png" width="100%" />
-                </v-col>
-              </v-row>
-              <v-row justify="center">
-                <div style="padding-top: 10px; text-align: center;" class="about-text">
-                  <span>VICEN</span>
-                </div>
-              </v-row>
-              <v-row justify="center">
-                <span>Artist</span>
-              </v-row>
-              <v-row justify="center">
-                <a href="https://x.com/Vicendraws" class="team-link" target="_blank">
-                  x.com/Vicendraws
-                </a>
-              </v-row>
-            </v-container>
-          </v-sheet>
-        </v-col>
-      </v-row>
-    </div>
+  <v-lazy :options="{'threshold':0.5}" transition="fade-transition" style="width: 100%;display: flex;justify-content: center;">
+    <div id="team" style="max-width: 900px" class="section">
+      <!-- <div style="position: absolute;width: 100%;margin: -16px;">
+        <img class="team-bg" src="@/assets/images/arch.svg">
+      </div> -->
+      <div style="text-align: center; position: relative">
+        <v-row justify="center">
+          <v-col>
+            <h2 class="title">Team</h2>
+          </v-col>
+        </v-row>
+        <v-row class="justify-center" style="margin-top: 50px;text-align: center;">
+          <v-col cols="8" sm="4" class="team-card">
+            <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
+              style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
+              <v-container>
+                <v-row>
+                  <v-col align-self="center">
+                    <v-img src="@/assets/images/DayTripper.png" width="100%" />
+                  </v-col>
+                </v-row>
+                <v-row justify="center">
+                  <div style="padding-top: 10px; text-align: center;" class="about-text">
+                    <span>DAYTRIPPER</span>
+                  </div>
+                </v-row>
+                <v-row justify="center">
+                  <span>Founder</span>
+                </v-row>
+                <v-row justify="center">
+                  <a href="https://www.x.com/daytripperNFT" class="team-link" target="_blank">
+                    x.com/daytripperNFT
+                  </a>
+                </v-row>
+              </v-container>
+            </v-sheet>
+          </v-col>
+          <v-col cols="8" sm="4" class="team-card">
+            <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
+              style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
+              <v-container>
+                <v-row>
+                  <v-col align-self="center">
+                    <v-img src="@/assets/images/Gyoza.png" width="100%" />
+                  </v-col>
+                </v-row>
+                <v-row justify="center">
+                  <div style="padding-top: 10px; text-align: center;" class="about-text">
+                    <span>GYOZA</span>
+                  </div>
+                </v-row>
+                <v-row justify="center">
+                  <span>Dev</span>
+                </v-row>
+                <v-row justify="center">
+                  <a href="https://x.com/GyozaOtoko4596" class="team-link" target="_blank">
+                    x.com/GyozaOtoko4596
+                  </a>
+                </v-row>
+              </v-container>
+            </v-sheet>
+          </v-col>
+          <v-col cols="8" sm="4" class="team-card">
+            <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" rounded
+              style="border-radius: 30px; border: 1px solid #707070; display: flex; align-items: center; justify-content: center;">
+              <v-container>
+                <v-row>
+                  <v-col align-self="center">
+                    <v-img src="@/assets/images/Vincen.png" width="100%" />
+                  </v-col>
+                </v-row>
+                <v-row justify="center">
+                  <div style="padding-top: 10px; text-align: center;" class="about-text">
+                    <span>VICEN</span>
+                  </div>
+                </v-row>
+                <v-row justify="center">
+                  <span>Artist</span>
+                </v-row>
+                <v-row justify="center">
+                  <a href="https://x.com/Vicendraws" class="team-link" target="_blank">
+                    x.com/Vicendraws
+                  </a>
+                </v-row>
+              </v-container>
+            </v-sheet>
+          </v-col>
+        </v-row>
+      </div>
 
-  </div>
+    </div>
+  </v-lazy>
 </template>
 
-<style>
+<style scoped>
 #team {
   margin-bottom: 100px;
   width: 100%;

@@ -1,6 +1,6 @@
 <template>
   <div id="sneakers" class="d-lg-flex justify-center section" style="z-index: 1">
-    <div class="shop_left">
+    <div :options="{'threshold':0.5}" transition="fade-transition" class="shop_left">
       <div>
         <div class="title">Blue Genesis: Limited Edition</div>
         <p class="shopText">Introducing our first drop: the Blue Genesis, a limited edition release of just 1500 pairs (250 remaining). Inspired by the origins of Bitcoin and the dawn of digital currency. Each pair comes with a generative art piece by the renowned artist OTO hyperlink to <a href="https://x.com/otograf_jp" target="_blank">x.com/otograf_jp</a> (as featured in Sotheby's). Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</p>
@@ -29,9 +29,9 @@
         </v-hover>
       </div>
     </div>
-    <div class="shop_right d-flex flex-column">
+    <v-lazy :options="{'threshold':0.5}" transition="fade-transition" class="shop_right d-flex flex-column">
       <div style="max-width: max-content;">
-        <div id="helioCheckoutContainer" ref="el"></div>
+        <div id="helioCheckoutContainer" ref="el" v-intersect="onIntersect"></div>
         <v-btn border block class="collection-btn rounded-lg text-none" style="margin-top: 20px" href="https://forms.gle/McmW4PKoPWT9xX7E7" target="_blank">RESERVE YOUR SNEAKERS</v-btn>
         <!-- <v-sheet color="linear-gradient(180deg, #262626 0%, #33333E 100%)" style="border-radius: 30px; border: 1px solid #707070; padding: 20px; margin-top: 20px">
           <p class="shopDisclaimer">
@@ -39,7 +39,7 @@
           </p>
         </v-sheet> -->
       </div>
-    </div>
+    </v-lazy>
   </div>
 </template>
 
@@ -54,8 +54,9 @@ declare global {
     }
 }
 
-onMounted(() => {
-  let helioCheckoutContainer = el.value;
+function onIntersect(isIntersecting: boolean, entries: any, observer: any) {
+  if (isIntersecting) {
+    let helioCheckoutContainer = el.value;
 
   window.helioCheckout(
     helioCheckoutContainer,
@@ -76,6 +77,10 @@ onMounted(() => {
       onStartPayment: () => console.log("Starting payment"),
     }
   );
+  }
+}
+onMounted(() => {
+  
 })
 
 </script>
