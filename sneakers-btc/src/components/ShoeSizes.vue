@@ -179,7 +179,7 @@
   font-size: 0.9rem;
 }
 
-.custom-font {
+.avantgardegothic-font {
   font-size: 1rem;
   /* Adjust the font size as needed */
 }

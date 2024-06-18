@@ -96,14 +96,14 @@ onMounted(() => {
   margin-bottom: 30px
 }
 .shopText {
-  font: normal normal normal 16px/20px Helvetica Neue;
+  font: normal normal normal 16px/20px Swansea;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 0.5;
   margin-top: 30px
 }
 .shopDisclaimer {
-  font: normal normal normal 16px/20px Helvetica Neue;
+  font: normal normal normal 16px/20px Swansea;
   letter-spacing: -0.32px;
 }
 .v-sheet.shopImg {
@@ -122,7 +122,7 @@ onMounted(() => {
   max-width: 250px;
 }
 .shopDisclaimer {
-  font: normal normal bold 16px Helvetica Neue;
+  font: normal normal bold 16px Swansea;
   letter-spacing: -0.32px;
 }
 #helioCheckoutContainer {

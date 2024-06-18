@@ -67,18 +67,18 @@ import '../assets/fonts.css';
 }
 
 .card_title {
-  font: normal normal bold 14px Helvetica Neue;
+  font: normal normal bold 14px Swansea;
   letter-spacing: -0.32px;
   color: #E87A0A;
   align-items: center;
 }
 
 .card_title-units {
-  font: normal normal bold 10px Helvetica Neue;
+  font: normal normal bold 10px Swansea;
 }
 
 .card_subtitle {
-  font: normal normal normal 8px Helvetica Neue;
+  font: normal normal normal 8px Swansea;
   letter-spacing: -0.32px;
   color: #FFFFFF;
   opacity: 0.5;
@@ -106,15 +106,15 @@ import '../assets/fonts.css';
   }
 
   .card_title {
-    font: normal normal bold 16px Helvetica Neue;
+    font: normal normal bold 16px Swansea;
   }
 
   .card_title-units {
-    font: normal normal bold 12px Helvetica Neue;
+    font: normal normal bold 12px Swansea;
   }
 
   .card_subtitle {
-    font: normal normal normal 10px Helvetica Neue;
+    font: normal normal normal 10px Swansea;
   }
 }
 
@@ -131,28 +131,28 @@ import '../assets/fonts.css';
   }
 
   .card_title {
-    font: normal normal bold 26px/52px Helvetica Neue;
+    font: normal normal bold 26px/52px Swansea;
   }
 
   .card_title-units {
-    font: normal normal bold 16px Helvetica Neue;
+    font: normal normal bold 16px Swansea;
   }
 
   .card_subtitle {
-    font: normal normal normal 12px Helvetica Neue;
+    font: normal normal normal 12px Swansea;
   }
 }
 
 .desc {
   text-align: left;
-  font: normal normal bold 16px/17px Helvetica Neue;
+  font: normal normal bold 16px/17px Swansea;
   letter-spacing: 1px;
   color: #FFFFFF;
   opacity: 0.5;
 }
 
 .text {
-  font: normal normal normal 16px/17px Helvetica Neue;
+  font: normal normal normal 16px/17px Swansea;
   /* font: 'Swansea'; */
   letter-spacing: -0.32px;
   color: #FFFFFF;

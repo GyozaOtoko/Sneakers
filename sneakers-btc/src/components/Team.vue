@@ -99,7 +99,7 @@
 }
 .about-text {
   text-align: center;
-  font: normal normal bold 20px/30px Helvetica Neue;
+  font: normal normal bold 20px/30px Swansea;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;

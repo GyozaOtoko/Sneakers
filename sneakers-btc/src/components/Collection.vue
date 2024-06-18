@@ -178,7 +178,7 @@ const collectionItems = computed(() => {
 
 <style>
 .collection_text {
-  font: normal normal normal 16px/20px Helvetica Neue;
+  font: normal normal normal 16px/20px Swansea;
   letter-spacing: -0.48px;
   color: #FFFFFF;
   opacity: 0.5
@@ -206,7 +206,7 @@ const collectionItems = computed(() => {
 }
 .coll_date {
   grid-area: date;
-  font: normal normal normal 16px/17px Helvetica Neue;
+  font: normal normal normal 16px/17px Swansea;
   letter-spacing: -0.32px;
   align-self: end;
   text-align: right;

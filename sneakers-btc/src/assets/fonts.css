@@ -5,6 +5,28 @@
     font-style: normal;
 }
 
-.custom-font {
+@font-face {
+    font-family: 'Swansea';
+    src: url('@/assets/fonts/Swansea/swansea.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlaywritePL';
+    src: url('@/assets/fonts/PlaywritePL/PlaywritePL-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.avantgardegothic-font {
     font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
+}
+
+.swansea-font {
+    font-family: 'Swansea', sans-serif;
+}
+
+.playwritePL-font {
+    font-family: 'PlaywritePL', sans-serif;
 }
