@@ -170,7 +170,8 @@ import '../assets/fonts.css';
 }
 
 .squiggly-bg {
-  background-image: url('@/assets/images/sneakerSquiggle2.png');
+  /* background-image: url('@/assets/images/sneakerSquiggle2.png'); */
+  background-image: url('@/assets/images/sneakers-hero.png');
   background-position: center;
   background-size: contain;
   height: 100%;
