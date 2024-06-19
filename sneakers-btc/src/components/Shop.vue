@@ -44,7 +44,7 @@
       <v-img src="@/assets/images/shopSneakers1.webp"/>
     </v-dialog> -->
     <v-overlay v-model="overlay" class="align-center justify-center" @click="overlay = false">
-      <v-card style="justify-content: center; display: flex; align-content: center; padding: 50px">
+      <v-card style="justify-content: center; display: flex; align-content: center; padding: 50px; background-image: linear-gradient(#262626, #33333E);">
         <img :src="getImageUrl(dialogImg)" style="max-width: 80vw; max-height: 80vh"/>
       </v-card>
     </v-overlay>
