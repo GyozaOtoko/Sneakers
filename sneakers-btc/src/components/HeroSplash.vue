@@ -19,7 +19,7 @@
                   <span>Each pair of sneakers comes with a generative art piece by OTO called Entangled Realms. Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</span>
                 </div> -->
                 <div class="squiggly-bg d-flex">
-                  <v-img class="d-md-none" src="@/assets/images/sneakerSquiggle2.png"></v-img>
+                  <v-img class="d-md-none" src="@/assets/images/sneakers-hero.png"></v-img>
                 </div>
                 <div class="d-md-flex" style="margin-top:30px;">
                   <div class="text">

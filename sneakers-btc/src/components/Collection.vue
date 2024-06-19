@@ -202,6 +202,7 @@ const collectionItems = computed(() => {
   grid-area: title;
   font-family: 'ITCAvantGardeGothicLTBold', sans-serif;
   font-size: 30px;
+  line-height: 27px;
   color: #E87A0A;
 }
 .coll_date {

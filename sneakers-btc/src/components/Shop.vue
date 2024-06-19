@@ -6,23 +6,23 @@
         <p class="shopText">Introducing our first drop: the Blue Genesis, a limited edition release of just 1500 pairs (250 remaining). Inspired by the origins of Bitcoin and the dawn of digital currency. Each pair comes with a generative art piece by the renowned artist <a href="https://x.com/otograf_jp" target="_blank">OTO</a> (as featured in Sotheby's). Combining high-end fashion with high-end art in a first-of-its-kind project built on Bitcoin.</p>
       </div>
       <div style="display: grid; grid-template-areas:'main right1''main right2''main right3'; gap: 20px; margin-top: 30px">
-        <v-sheet style="grid-area: main;" class="shopImg mainShopImg">
+        <v-sheet style="grid-area: main;" class="shopImg mainShopImg" @click="onImageClicked('shopSneakers1.webp')">
           <v-img src="@/assets/images/shopSneakers1.webp" cover class="onImgHover"/>
         </v-sheet>
         <v-hover v-slot="{ isHovering, props }">
-          <v-sheet v-bind="props" style="grid-area: right1" class="shopImg rightShopImg">
+          <v-sheet v-bind="props" style="grid-area: right1" class="shopImg rightShopImg" @click="onImageClicked('shopSneakers2.webp')">
             <v-img src="@/assets/images/shopSneakers2.webp" cover class="onImgHover"/>
             <v-overlay :model-value="!isHovering" class="align-center justify-center" scrim="#000000" contained></v-overlay>
           </v-sheet>
         </v-hover>
         <v-hover v-slot="{ isHovering, props }">
-          <v-sheet v-bind="props" style="grid-area: right2" class="shopImg rightShopImg">
+          <v-sheet v-bind="props" style="grid-area: right2" class="shopImg rightShopImg" @click="onImageClicked('shopSneakers3.webp')">
             <v-img src="@/assets/images/shopSneakers3.webp" cover class="onImgHover"/>
             <v-overlay :model-value="!isHovering" class="align-center justify-center" scrim="#000000" contained></v-overlay>
           </v-sheet>
         </v-hover>
         <v-hover v-slot="{ isHovering, props }">
-          <v-sheet v-bind="props" style="grid-area: right3" class="shopImg rightShopImg">
+          <v-sheet v-bind="props" style="grid-area: right3" class="shopImg rightShopImg" @click="onImageClicked('shopSneakers4.webp')">
             <v-img src="@/assets/images/shopSneakers4.webp" cover class="onImgHover"/>
             <v-overlay :model-value="!isHovering" class="align-center justify-center" scrim="#000000" contained></v-overlay>
           </v-sheet>
@@ -40,49 +40,67 @@
         </v-sheet> -->
       </div>
     </v-lazy>
+    <!-- <v-dialog v-model="dialog" width="auto">
+      <v-img src="@/assets/images/shopSneakers1.webp"/>
+    </v-dialog> -->
+    <v-overlay v-model="overlay" class="align-center justify-center" @click="overlay = false">
+      <v-card style="justify-content: center; display: flex; align-content: center; padding: 50px">
+        <img :src="getImageUrl(dialogImg)" style="max-width: 80vw; max-height: 80vh"/>
+      </v-card>
+    </v-overlay>
   </div>
 </template>
 
-<script setup lang="ts" scoped>
-import { ref, onMounted } from 'vue';
-
-let el = ref(null);
-
+<script lang="ts" scoped>
 declare global {
     interface Window {
       helioCheckout:any;
     }
 }
 
-function onIntersect(isIntersecting: boolean, entries: any, observer: any) {
-  if (isIntersecting) {
-    let helioCheckoutContainer = el.value;
-
-  window.helioCheckout(
-    helioCheckoutContainer,
-    {
-      paylinkId: "66611b6df244ef362bfc7394",
-      platform: "magic_eden",
-      theme: {
-        themeMode: "dark", // or "light"
-        colors: {
-          primaryButtonBackground: "#F76C1B",
-          primaryButtonText: "#FFFFFF",
-        }
-      },
-      onSuccess: (event: any) => console.log(event),
-      onError: (event: any) => console.log(event),
-      onPending: (event: any) => console.log(event),
-      onCancel: () => console.log("Cancelled payment"),
-      onStartPayment: () => console.log("Starting payment"),
+export default {
+  data () {
+    return {
+      dialog: false,
+      overlay: false,
+      dialogImg: "",
     }
-  );
+  },
+  methods: {
+    getImageUrl(fileName: string) {
+      return new URL(`../assets/images/${fileName}`, import.meta.url).href;
+    },
+    onImageClicked(imgPath: string) {
+      this.dialogImg = imgPath;
+      this.overlay = true;
+    },
+    onIntersect(isIntersecting: boolean, entries: any, observer: any) {
+      if (isIntersecting) {
+        let helioCheckoutContainer = this.$refs.el;
+
+        window.helioCheckout(
+          helioCheckoutContainer,
+          {
+            paylinkId: "66611b6df244ef362bfc7394",
+            platform: "magic_eden",
+            theme: {
+              themeMode: "dark", // or "light"
+              colors: {
+                primaryButtonBackground: "#F76C1B",
+                primaryButtonText: "#FFFFFF",
+              }
+            },
+            onSuccess: (event: any) => console.log(event),
+            onError: (event: any) => console.log(event),
+            onPending: (event: any) => console.log(event),
+            onCancel: () => console.log("Cancelled payment"),
+            onStartPayment: () => console.log("Starting payment"),
+          }
+        );
+      }
+    }
   }
 }
-onMounted(() => {
-  
-})
-
 </script>
 
 <style>
@@ -132,6 +150,7 @@ onMounted(() => {
 }
 #helioCheckoutContainer {
   max-width: max-content;
+  min-height: 320px;
 }
 #helioCheckoutContainer .hel-bg-white {
   background-color: rgb(33,33,33, 0) !important;
