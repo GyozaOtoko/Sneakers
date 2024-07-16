@@ -7,7 +7,7 @@
     <v-toolbar-items class="hidden-sm hidden-xs">
       <template v-for="(item) in menuItems" :key="item.id">
         <v-hover v-slot="{ isHovering, props }">
-          <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props"  @click="if(item.id < 5 ){router.push(item.path);}">{{ item.title }}</v-btn>
+          <v-btn flat v-bind:href="item.path" variant="plain" :class="isHovering ? 'menuHover' : ''" v-bind="props"  @click="if(item.id < 5 ){$router.push(item.path);}">{{ item.title }}</v-btn>
         </v-hover>
       </template>
     </v-toolbar-items>
@@ -24,7 +24,7 @@
         <v-list-item v-for="(item) in menuItems" :key="item.id" @click="drawer = false">
           <v-list-item-content>
             <v-list-item-title>
-              <v-btn block class="justify-start" v-bind:href="item.path" @click="if(item.id < 5 ){router.push(item.path);}">{{ item.title }}</v-btn>
+              <v-btn block class="justify-start" v-bind:href="item.path" @click="if(item.id < 5 ){$router.push(item.path);}">{{ item.title }}</v-btn>
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -33,19 +33,19 @@
 </template>
 
 <script setup lang="ts">
-const router = useRouter();
+//const router = useRouter();
 const route = useRoute()
 let redirectPath = route.name != '/' ? '/' : '';
 const url = window.location.origin
 
 const drawer = ref(false);
 const menuItems = [
-  { title: 'Home', path: `${url}${redirectPath}#home`, id: 1},
+  { title: 'Home', path: `/#home`, id: 1},
   // { title: 'About', path: '#about'},
-  { title: 'Sneakers', path: `${url}${redirectPath}#sneakers`, id: 2},
-  { title: 'Collections', path: `${url}${redirectPath}#collections`, id: 3},
-  { title: 'Team', path: `${url}${redirectPath}#team`, id: 4},
-  { title: 'Claim', path: `${url}/claim`, id: 5},
+  { title: 'Sneakers', path: `/#sneakers`, id: 2},
+  { title: 'Collections', path: `/#collections`, id: 3},
+  { title: 'Team', path: `/#team`, id: 4},
+  { title: 'Claim', path: `/claim`, id: 5},
 ];
 </script>
 
